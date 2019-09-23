@@ -48,8 +48,27 @@ export default createGlobalStyle`
     font-variant-numeric: proportional-nums;
   }
 
+  h1{
+    font-size:2.4em;
+    line-height:1.2em;
+  }
+
+  h2{
+    font-size:1.8em;
+    line-height:1.2em;
+  }
+
+  h3{
+    font-size: 1.2em;
+    line-height:1.2em;
+  }
+
   ol, ul {
-    list-style: none;
+    margin-left: 1.8em;
+  }
+
+  li {
+    line-height:1.2em;
   }
 
   blockquote, q {

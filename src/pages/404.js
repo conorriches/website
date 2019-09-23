@@ -4,7 +4,10 @@ import Layout from 'components/layout';
 
 const NotFound = () => (
   <Layout>
-    <Box>Not found.</Box>
+    <Box>
+      <h3>Four Oh Four.</h3>
+      <p>Nothing is here at this URL. </p>
+    </Box>
   </Layout>
 );
 

@@ -10,5 +10,6 @@ export const Container = styled.div`
   color: #fff;
   transition: background-color 0.3s ease;
 
-  background-color: ${({ isVisible }) => (isVisible ? accent : ' #333')};
+  border-left: ${({ isVisible }) =>
+    `2px solid ${isVisible ? accent : '#333'}F`};
 `;
