@@ -6,7 +6,7 @@ import Box from 'components/box';
 import Head from 'components/head';
 
 const About = ({ data }) => (
-  <Layout>
+  <Layout colour="millennial">
     <Head pageTitle={data.aboutJson.title} />
     <Box>
       <div

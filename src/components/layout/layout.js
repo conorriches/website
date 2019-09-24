@@ -6,11 +6,11 @@ import Header from 'components/header';
 import { LayoutBox } from './layout.css';
 import GlobalStyle from 'global.css.js';
 
-const Layout = ({ data, children }) => (
+const Layout = ({ data, children, colour }) => (
   <LayoutBox>
     <GlobalStyle />
     <Head />
-    <Header title={data.site.siteMetadata.siteTitle} />
+    <Header colour={colour} title={data.site.siteMetadata.siteTitle} />
     {children}
   </LayoutBox>
 );

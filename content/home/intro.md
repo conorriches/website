@@ -1,1 +1,1 @@
-## You're probably here for my blog
+## Just my content

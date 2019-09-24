@@ -8,16 +8,15 @@ import IOExample from 'components/io-example';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
-  <Layout>
+  <Layout colour="blue">
     <Box>
-      <Box>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: data.homeJson.content.childMarkdownRemark.html,
-          }}
-        />
-      </Box>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: data.homeJson.content.childMarkdownRemark.html,
+        }}
+      />
     </Box>
+    <Gallery items={data.homeJson.gallery} />
   </Layout>
 );
 

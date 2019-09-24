@@ -2,24 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import posed from 'react-pose';
-import { Container, Fade } from './header.css';
+import classnames from 'classnames';
+
+import './header.scss';
 import Title from 'components/title';
 import Nav from 'components/header/nav';
 
 // Example of a component-specific page transition
 const AnimatedContainer = posed.div({});
 
-const Header = ({ title }) => (
+const Header = ({ title, colour }) => (
   <AnimatedContainer>
-    <Container>
+    <div className="Container">
       <Link to="/">
         <Title as="h1">{title}</Title>
       </Link>
       <Nav />
-    </Container>
-    <Container>
-      <Fade />
-    </Container>
+    </div>
+    <div className="Container">
+      <div className={classnames('Fade', `Fade--${colour}`)} />
+    </div>
   </AnimatedContainer>
 );
 
