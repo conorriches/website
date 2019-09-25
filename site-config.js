@@ -6,8 +6,8 @@ module.exports = {
   siteDescription: `notes from the hackerspace - a blog by Conor Riches`,
   siteUrl: `https://conorriches.co.uk`,
   author: 'Conor',
-  themeColor: `#f0f`,
-  backgroundColor: `#00f`,
+  themeColor: `#fff`,
+  backgroundColor: `#fff`,
   pathPrefix: null,
   logo: path.resolve(__dirname, 'src/images/icon.png'),
   social: {

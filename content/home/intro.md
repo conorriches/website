@@ -1,1 +1,1 @@
-## Just my content
+## Website of a Manchester maker, software engineer, and human

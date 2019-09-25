@@ -4,7 +4,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    padding-top: 4rem;
+    padding-top: 2rem;
+    @media (min-width: 768px){
+      padding-top: 4rem;
+    }
+
   
     a {
       color: #757575;
@@ -17,41 +21,86 @@
     }
 }
 
-
 .Fade{
-  height: 5px;
-  width: 100%;
+ 
+
+  &__Wrapper{
+    height: 1px;
+    width: 100%;
+    overflow: hidden; 
+    margin-top:1.2em;
+
+    &--top{
+      margin-top:0;
+      height:5px;
+      position: fixed;
+      z-index: 11;
+    }
+  }
+
+  width:200%;
+  height:5px;
 
   background: #4CA1AF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  @-webkit-keyframes MOVE-BG {
+    0% {
+      -webkit-transform: translateX(0);
+    }
+    50% { 
+      -webkit-transform: translateX(-50%);
+    }
+    0% {
+      -webkit-transform: translateX(0);
+    }
+  }
+
+  -webkit-animation-name: MOVE-BG;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: steps(15);
+  -webkit-animation-iteration-count: infinite;
 
   &--blue{
       background: #0575e6; /* fallback for old browsers */
       background: -webkit-linear-gradient(
         to right,
         #021b79,
-        #0575e6
+        #0575e6,
+        #021b79
       ); /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(
         to right,
         #021b79,
-        #0575e6
+        #0575e6,
+        #021b79
       ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
   }
 
   &--light{
-    background: #00C9FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+  }
 
   &--millennial{
     
-    background: #c2e59c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     }
+}
+
+
+.FadeHider{
+  width: 100%;
+  height: 14em;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%); 
+  position: absolute;
+  z-index: -1;
 }

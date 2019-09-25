@@ -3,6 +3,7 @@
   "license": "MIT",
   "author": "Fabian Schultz <desk@fabianschultz.com>",
   "scripts": {
+    "add-domain": "echo conorriches.co.uk > ./public/CNAME",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "ssr": "npm run build && npm run serve",
@@ -11,7 +12,7 @@
     "build:favicons": "node scripts/favicons",
     "build": "npm run build:dir && npm run build:favicons && gatsby build",
     "test": "ava **/*.test.js --verbose",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && npm run add-domain && gh-pages -d public"
   },
   "greenkeeper": {
     "ignore": [

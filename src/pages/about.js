@@ -6,15 +6,14 @@ import Box from 'components/box';
 import Head from 'components/head';
 
 const About = ({ data }) => (
-  <Layout colour="millennial">
+  <Layout colour="light">
     <Head pageTitle={data.aboutJson.title} />
-    <Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
-        }}
-      />
-    </Box>
+
+    <div
+      dangerouslySetInnerHTML={{
+        __html: data.aboutJson.content.childMarkdownRemark.html,
+      }}
+    />
   </Layout>
 );
 

@@ -19,7 +19,7 @@ const Header = ({ title, colour }) => (
       </Link>
       <Nav />
     </div>
-    <div className="Container">
+    <div className="Fade__Wrapper">
       <div className={classnames('Fade', `Fade--${colour}`)} />
     </div>
   </AnimatedContainer>

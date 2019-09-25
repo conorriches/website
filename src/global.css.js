@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import { accent } from 'constants/theme';
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -19,7 +21,7 @@ export default createGlobalStyle`
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-family: 'Varela Round', sans-serif;
     vertical-align: baseline;
   }
 
@@ -49,19 +51,44 @@ export default createGlobalStyle`
     overflow-y: scroll;
   }
 
+  h1 {
+    background: #0575e6;
+    background: -webkit-linear-gradient(
+      to right,
+      #0575e6,
+      #021b79
+    );
+    background: linear-gradient(
+      to right,
+      #0575e6,
+      #021b79
+    ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   h1{
     font-size:2.4em;
     line-height:1.2em;
+    margin: 0.6em 0;
   }
 
   h2{
     font-size:1.8em;
     line-height:1.2em;
+    margin: 0.6em 0;
   }
 
   h3{
     font-size: 1.2em;
     line-height:1.2em;
+    margin: 0.6em 0;
+  }
+
+  h4{
+    font-weight: bold;
+    line-height:1.4em;
+    margin: 0.6em 0;
   }
 
   ol, ul {
@@ -109,6 +136,16 @@ export default createGlobalStyle`
   }
 
   p {
-    margin-bottom: 2rem;
+    margin-top:0.6em;
+    margin-bottom: 2.4rem;
+    line-height:1.4em;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+
+  em {
+    font-style: italic;
   }
 `;

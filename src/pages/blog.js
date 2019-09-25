@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from 'components/layout';
-import Box from 'components/Box';
 import PostLink from '../components/post-link';
 
 import './blog.scss';
@@ -25,6 +24,9 @@ class BlogPage extends React.Component {
       return (
         edge.node.frontmatter.title
           .toLowerCase()
+          .indexOf(this.state.query.toLowerCase()) >= 0 ||
+        edge.node.frontmatter.excerpt
+          .toLowerCase()
           .indexOf(this.state.query.toLowerCase()) >= 0
       );
     }
@@ -45,13 +47,13 @@ class BlogPage extends React.Component {
         return <PostLink key={edge.node.id} post={edge.node} />;
       });
     return (
-      <Layout colour="blue">
+      <Layout colour="millennial">
         <div className="Blog">
           <div className="Blog__SearchWrapper">
             <input
               className="Blog__Search"
               type="text"
-              placeholder="Search"
+              placeholder="Filter "
               value={this.state.query}
               onChange={this.handleChange}
             />
@@ -78,6 +80,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            excerpt
           }
         }
       }

@@ -1,0 +1,12 @@
+.Layout{
+  margin: 0 5%;
+
+  @media (min-width: 768px){
+    margin:0 20%;
+  }
+
+  &__Main{
+    padding:1.8em 0;
+  }
+}
+

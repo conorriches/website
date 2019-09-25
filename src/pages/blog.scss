@@ -7,17 +7,14 @@
     }
 
     &__Search{
-        background: #ee0979;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                
+        border:1px solid #00c9ff;
+        border-bottom:5px solid #00c9ff;
         font-size:1em;
         margin-top:1em;
         line-height: 1.9em;
-        color:white;
+        color:#363795;
         padding:0.6em;
-        width:100%;
-        border:0;
+        width:100%; 
     }
 
    

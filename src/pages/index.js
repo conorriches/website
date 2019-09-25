@@ -2,20 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Box from 'components/box';
-import Title from 'components/title';
 import Gallery from 'components/gallery';
-import IOExample from 'components/io-example';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+
+import './index.scss';
 
 const Index = ({ data }) => (
   <Layout colour="blue">
-    <Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.homeJson.content.childMarkdownRemark.html,
-        }}
-      />
-    </Box>
+    <div
+      dangerouslySetInnerHTML={{
+        __html: data.homeJson.content.childMarkdownRemark.html,
+      }}
+    ></div>
+    <Link to="/blog" className="BlogLink">
+      Visit my blog <span className="chevron right"></span>
+    </Link>
     <Gallery items={data.homeJson.gallery} />
   </Layout>
 );
