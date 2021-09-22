@@ -1,10 +1,10 @@
 
-<p align="center">
-  <h3>Hello, I'm Conor </h3><br/><br/>
+<h3 align="center">
+  <b>Hello, I'm Conor </b><br/><br/>
   <img src="./badge-robot.svg">
   <img src="./badge-engineer.svg">
   <img src="./badge-utf.svg"><br/><br/>
-</p>
+</h3>
 
 <p align="center">
     This is an brief but eclectic mix of some of my projects.<br/><br/>
