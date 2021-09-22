@@ -1,6 +1,6 @@
 
 <p align="center">
-  <b>Hello, I'm Conor </b><br/><br/>
+  <h3>Hello, I'm Conor </h3><br/><br/>
   <img src="./badge-robot.svg">
   <img src="./badge-engineer.svg">
   <img src="./badge-utf.svg"><br/><br/>
