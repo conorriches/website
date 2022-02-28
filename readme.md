@@ -7,8 +7,8 @@
 </h3>
 
 <p align="center">
-    This is an brief but eclectic mix of some of my projects.<br/><br/>
-    I work as a software engineer but here on my personal repo you'll find some of the interesting bits I've been working on. Not all of what I do makes it online, and not all of that is public!<br/><br/>
+    This is a brief but eclectic mix of some of my projects.<br/><br/>
+    I work as a software engineer but here on my personal repo you'll find some of the various other bits I've been working on. Not all of what I do makes it online!<br/><br/>
     I'm a member of Hackspace Manchester and it's here I do all sorts of making, coding and hacking of stuff.
 </p>
 
