@@ -1,1 +1,3 @@
-## Website of a Manchester maker, software engineer, and human
+## Website of a maker, software engineer, and human
+
+> "A cup of tea would restore my normality."

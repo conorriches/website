@@ -1,11 +1,9 @@
-## I'm cone, but that's just my nickname
+## I'm Conor and this is my blog
 
 #### I am...
 
 
 ... a maker
-
-... a hacker (see: maker)
 
 ... a software engineer
 
@@ -16,7 +14,7 @@
 
 #### I write about...
 
-... things that I would have found useful to know
+... things that I find interesting
 
 ... projects that I learned from
 

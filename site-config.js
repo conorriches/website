@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteTitle: `notes from the hackerspace`,
   siteTitleShort: `NFTH`,
-  siteDescription: `notes from the hackerspace - a blog by Conor Riches`,
+  siteDescription: `notes from the hackerspace - a blog from cone`,
   siteUrl: `https://conorriches.co.uk`,
   author: 'Conor',
   themeColor: `#fff`,

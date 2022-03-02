@@ -2,13 +2,18 @@
   "title": "Home",
   "content": "intro.md",
   "gallery": [{
-    "title": "Architecture",
-    "copy": "Art as Infrastructure",
-    "image": "../images/home/sky.jpg"
+    "title": "Projects",
+    "copy": "Mischief I'm getting into",
+    "image": "../images/home/camera.jpg"
   },
   {
-    "title": "Exploration",
-    "copy": "Post-industrialist marvels",
-    "image": "../images/home/explore.jpg"
+    "title": "Exploration & Old stuff",
+    "copy": "Anything post-industrial",
+    "image": "../images/home/sky2.jpg"
+  },
+  {
+    "title": "Context-Free",
+    "copy": "HTTP 418",
+    "image": "../images/home/roof.jpg"
   }]
 }

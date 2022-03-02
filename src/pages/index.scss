@@ -37,3 +37,31 @@
         transform: rotate(45deg);
     }
 }
+
+figure.gatsby-resp-image-figure{
+    border-bottom: 1px dotted black;
+    width: 100%;
+    
+    &:nth-child(even){
+        margin: 0 1.5em 1em 0;
+        float:left;
+    }
+
+    &:nth-child(odd){
+        float: right;
+        margin: 0 0 1em 1.5em;
+    }
+
+    @media (min-width: 768px){
+        width: 56%;
+    }
+}
+
+figcaption.gatsby-resp-image-figcaption {
+    padding: 0.5em;
+}
+
+code {
+    font-family: 'courier';
+    background: #fafafa;
+}
