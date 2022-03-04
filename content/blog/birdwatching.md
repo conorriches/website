@@ -116,6 +116,24 @@ https://cocodataset.org/#explore?id=12805
 The context is nothing if not diverse either:
 https://cocodataset.org/#explore?id=43511
 
+You'll want to download the models and labels file somewhere sensible, I've put them in `/home/pi/models`:
+[Follow the instructions here](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#option-1-using-googles-sample-tflite-model)
+
+Create a file called `object_detect_tf.json` and paste the following in:
+```
+{
+    "object_detect_tf":
+    {
+        "number_of_threads" : 2,
+        "refresh_rate" : 10,
+        "confidence_threshold" : 0.5,
+        "overlap_threshold" : 0.5,
+        "model_file" : "/home/pi/models/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29/detect.tflite",
+        "labels_file" : "/home/pi/models/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29/labelmap.txt",
+        "verbose" : 1
+    }
+}
+```
 
 ## Step Five - let's go!
 We now run the command that will:
