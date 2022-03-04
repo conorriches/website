@@ -119,6 +119,7 @@ export default createGlobalStyle`
   }
 
   pre {
+    background: #eee;
     display: block;
     padding: 2rem;
     margin-top: 4rem;
@@ -128,7 +129,16 @@ export default createGlobalStyle`
     border-radius: 5px;
     color: ${accent};
     border: 1px solid #ddd;
+    background: #eee;
+    border-left: 3px solid;
     font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  }
+
+  code {
+    font-family: courier;
+    background: #eee;
+    display: inline-block;
+    padding: 0 0.5em;
   }
 
   video {

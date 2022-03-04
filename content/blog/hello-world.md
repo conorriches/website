@@ -1,5 +1,5 @@
 ---
-date: "2019-09-24"
+date: "2022-02-20"
 title: "Hello World - a restart of my blog"
 excerpt: "An Unfortunate Incident, namely Wordpress, occurred"
 ---
