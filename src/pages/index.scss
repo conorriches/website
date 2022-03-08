@@ -38,16 +38,16 @@
     }
 }
 
-figure.gatsby-resp-image-figure{
+.gatsby-resp-image-figure{
     border-bottom: 1px dotted black;
     width: 100%;
     
-    &:nth-child(even){
+    &:nth-of-type(even){
         margin: 0 1.5em 1em 0;
         float:left;
     }
 
-    &:nth-child(odd){
+    &:nth-of-type(odd){
         float: right;
         margin: 0 0 1em 1.5em;
     }
@@ -63,5 +63,6 @@ figcaption.gatsby-resp-image-figcaption {
 
 code {
     font-family: 'courier';
-    background: #fafafa;
+    background: #eee;
+    color: black;
 }

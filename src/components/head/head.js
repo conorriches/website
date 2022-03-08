@@ -26,6 +26,7 @@ const Head = ({
       name="viewport"
     />
 
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" type="text/css"/>
     <meta content={siteTitle} name="apple-mobile-web-app-title" />
     <meta content={pageTitleFull} property="og:title" />
     <meta content={pageTitleFull} name="twitter:title" />
@@ -54,13 +55,13 @@ const Head = ({
     <meta content={canonical} name="twitter:url" />
     <link rel="canonical" href={canonical} />
 
-    <meta content={imageUrl || `${siteUrl}/social.png`} property="og:image" />
+    <meta content={imageUrl || `${canonical}/twitter-card.jpg`} property="og:image" />
     <meta content="1024" property="og:image:width" />
     <meta content="512" property="og:image:height" />
-    <meta content={imageUrl || `${siteUrl}/social.png`} name="twitter:image" />
+    <meta content={imageUrl || `${canonical}/twitter-card.jpg`} name="twitter:image" />
     <meta content="1024" name="twitter:image:width" />
     <meta content="512" name="twitter:image:height" />
-    <meta content={imageUrl || `${siteUrl}/social.png`} property="og:image" />
+    <meta content={imageUrl || `${canonical}/twitter-card.jpg`} property="og:image" />
     <meta content="1024" property="og:image:width" />
     <meta content="512" property="og:image:height" />
 

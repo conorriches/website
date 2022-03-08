@@ -40,8 +40,23 @@ module.exports = {
               showCaptions: true
             },
           },
+          {
+            resolve: `gatsby-remark-twitter-cards`,
+            options: {
+              title: 'notes from the hackerspace', // website title
+              separator: '|', // default
+              author: 'Conor',
+              background: '#00d4ff', // path to 1200x630px file or hex code, defaults to black (#000000)
+              fontColor: '#ffffff', // defaults to white (#ffffff)
+              titleFontSize: 60, // default
+              subtitleFontSize: 40, // default
+              fontStyle: 'monospace', // default
+              useFrontmatterSlug: false // default, if true it will use the slug defined in the post frontmatter
+            },
+          },
         ],
       },
     },
+
   ],
 };

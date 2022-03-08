@@ -1,5 +1,13 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": [
+        "@babel/preset-react"
+      ]
+    }
+  },
   "env": {
     "browser": true,
     "node": true
@@ -20,7 +28,10 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"
   ],
-  "plugins": ["prettier", "jsx-a11y"],
+  "plugins": [
+    "prettier",
+    "jsx-a11y"
+  ],
   "settings": {
     "react": {
       "version": "detect"

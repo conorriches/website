@@ -2,6 +2,7 @@
 date: "2022-02-28"
 title: "BirbCam™ - Automatic Birdwatching with Raspberry Pi HQ Camera"
 excerpt: "You don't have to spend hours out in the cold birdwatching, instead, let TensorFlow Lite do the heavy lifting, and the Pi HQ Camera get sharp photos."
+featuredImage: ../images/birdwatching/blue.jpg
 ---
 
 Let's face it, birdwatching takes time. A **lot** of time.
@@ -28,6 +29,7 @@ We are going to use the new [libcamera](https://www.raspberrypi.com/documentatio
 * tripod
 
 There's no coding needed to get it up and running, but some proficiency with Raspberry Pi will come in handy.
+
 
 ## Prerequisites
 This guide doesn't cover everything, so here's some good things to start with:
@@ -77,6 +79,7 @@ We need a way to detect birds specifically, so we don't get thousands of images 
 ## Step three - rebuild libcamera-apps
 We can use [libcamera-detect](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-detect) to open the camera up, and plug into TensorFlow Lite to identify when a bird is on screen.  
 
+
 This does not come pre-built, so we will need to build it, folding in our now-installed TensorFlow Lite installation. 
 
 * Rebuild libcamera-apps
@@ -106,9 +109,13 @@ This does not come pre-built, so we will need to build it, folding in our now-in
   ```
 
 ## Step Four - when is a bird a bird?
-So far we have most of the pieces in place but the software still doesn't know what a bird is. Therefore, we need a model which describes what a bird is, and fortunately the hard work is done for us as online there exists a library of common objects which has pre-trained models which we can download.
+So far we have most of the pieces in place but the software still doesn't know what a bird is. 
+![The setup using a Pi mount on the tripod](../images/birdwatching/camera.jpg)
 
-Common Objects In Context (COCO) is a machine learning dataset of common objects (including birds) that we can use without having to train up our own model of a bird. From exploring the dataset, it looks like it will work perfectly.
+Therefore, we need a model which describes what a bird is, and fortunately the hard work is done for us as online there exists a library of common objects which has pre-trained models which we can download.
+
+
+[Common Objects In Context](https://cocodataset.org) (COCO) is a machine learning dataset of common objects (including birds) that we can use without having to train up our own model of a bird. From exploring the dataset, it looks like it will work perfectly.
 
 For example, this image has multiple items identified:
 https://cocodataset.org/#explore?id=12805
@@ -140,6 +147,7 @@ We now run the command that will:
 * start the camera
 * start watching for birds
 * take a photo when one is identified
+
 
 That's done by running the following command:
 `libcamera-detect -t 0 -o birb%04d.jpg --lores-width 400 --lores-height 300 --post-process-file object_detect_tf.json --object bird`

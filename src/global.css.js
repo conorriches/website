@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import { accent } from 'constants/theme';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
