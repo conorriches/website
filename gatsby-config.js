@@ -46,7 +46,7 @@ module.exports = {
               title: 'notes from the hackerspace', // website title
               separator: '|', // default
               author: 'Conor',
-              background: '#00d4ff', // path to 1200x630px file or hex code, defaults to black (#000000)
+              background: require.resolve('./content/images/home/twitter.png'), // path to 1200x630px file or hex code, defaults to black (#000000)
               fontColor: '#ffffff', // defaults to white (#ffffff)
               titleFontSize: 60, // default
               subtitleFontSize: 40, // default
