@@ -28,7 +28,7 @@ Screw terminals output to the LED tape which is nice, and a barrel jack input wh
 
 The one thing I was surprised not to see was the ability to program it via USB, instead you need to connect up a [USB-to-UART converter](https://www.ebay.co.uk/itm/203604196200), which fortunately can be found very cheaply online. Note that the programming pins are male, so you'll want a programmer that comes with female-to-female dupont cables.
 
-![Slightly bare, but has most things you'll need. Plus it's open source, so you're able to make your own based on this.](https://cdn.shopify.com/s/files/1/0176/3274/products/anavi-light-controller-anavi-technology-104856-34120408301763_1600x.jpg)
+![Slightly bare, but has most things you'll need. Plus it's open source, so you're able to make your own based on this.](https://cdn.shopify.com/s/files/1/0176/3274/products/anavi-light-controller-anavi-technology-104856-34120408301763_600x.jpg)
 
 Programming an ESP8266 directly ended up being super easy and actually quite fun, so it's not a major downside at all - if anything I ended up learning something new, and in future instead of choosing a NodeMCU by default, I'll feel confident to just use the ESP8266 itself, and design my own supporting circuitry as needed.
 

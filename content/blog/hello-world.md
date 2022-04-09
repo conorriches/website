@@ -21,6 +21,6 @@ I got a fairly mild Covid infection, figured I was about to get better but kind 
 Instead, things fell apart in many awful ways. This experience will be written in another post. The short of the long is that I'm well enough to write again.
 
 ## What happened to Wordpress
-Wordpress happened to it. As with any Wordpress installation, it requires hosting, updates, and general maintenance. I wasn't making use of anything specific to Wordpress, so hosting it was unneccessary.
+Wordpress happened to it. As with any Wordpress installation, it requires hosting, updates, and general maintenance. I wasn't making use of anything specific to Wordpress, so hosting it was unnecessary.
 
 So here we are.

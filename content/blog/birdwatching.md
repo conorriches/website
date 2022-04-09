@@ -14,11 +14,11 @@ So what better to do than to automate the hell out of it? Raspberry Pi's rarely 
 ## Project overview
 ![A bluetit, caught with the Raspberry Pi HQ camera](../images/birdwatching/blue.jpg)
 
-We are going to use a Raspberry Pi with an HQ Camera, paired with TensorFlow Lite machine learning to identify when there's a bird infront of the camera, and take a photo when it sees one.
+We are going to use a Raspberry Pi with an HQ Camera, paired with TensorFlow Lite machine learning to identify when there's a bird in front of the camera, and take a photo when it sees one.
 
 The camera should be facing something like a birdbath, feeder, or table where birds are likely to visit when left alone. 
 
-We are going to use the new [libcamera](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps) stack - so make sure you have a recent version of Raspberry Pi OS installed and everyting is up to date. 
+We are going to use the new [libcamera](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps) stack - so make sure you have a recent version of Raspberry Pi OS installed and everything is up to date. 
 
 <div style="clear:both"></div>
 
@@ -33,7 +33,7 @@ There's no coding needed to get it up and running, but some proficiency with Ras
 
 ## Prerequisites
 This guide doesn't cover everything, so here's some good things to start with:
-* Setting up a Raspbery Pi
+* Setting up a Raspberry Pi
 * [Installing a Raspberry Pi camera](https://www.raspberrypi.com/documentation/accessories/camera.html#installing-a-raspberry-pi-camera)
 * Enabling ssh
 * Basic linux commands
@@ -72,7 +72,7 @@ Practice copying over photos, it's a bit manual for now but you're now up and ru
 
 
 ## Step two - install TensorFlow Lite
-We need a way to detect birds specifically, so we don't get thousands of images of leaves moving. The first step is to install TensorFlow Lite - this is based on machine learning and can be used to identify when there's a bird infront of the camera. It doesn't know what a bird is, but we can later on give it some models and it'll be able to do the magic needed to then use those models to spot a bird.
+We need a way to detect birds specifically, so we don't get thousands of images of leaves moving. The first step is to install TensorFlow Lite - this is based on machine learning and can be used to identify when there's a bird in front of the camera. It doesn't know what a bird is, but we can later on give it some models and it'll be able to do the magic needed to then use those models to spot a bird.
 
 * Follow [the instructions](https://lindevs.com/install-precompiled-tensorflow-lite-on-raspberry-pi/) to install TensorFlow Lite.
 

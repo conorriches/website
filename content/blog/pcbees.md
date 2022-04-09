@@ -19,9 +19,9 @@ Time for a short history lesson - the symbol of Manchester is the worker bee.
 
 ![Bee Bollards can be found in Manchester](../images/bees/bollard.jpg) 
 
-It's a (slightly rose-tinted) nod back to the industrial revolution when Manchester was full of textile mills and a hive of industreous activity. It still is industreous, but the mills are mostly now trendy flats (or the hackerspace) and the industreous activity is usually over a latte or foosball table.
+It's a (slightly rose-tinted) nod back to the industrial revolution when Manchester was full of textile mills and a hive of industrious activity. It still is industrious, but the mills are mostly now trendy flats (or the hackerspace) and the industrious activity is usually over a latte or foosball table.
 
-The bee emblem can be found all over the city, and it may well have been the *inexplicable* appearance of a bee-emblazoned bollard in the space that gave me the idea that we should do something around the worker bee. It represented making, working hard, being industeous, creative and coming together (while nicely ignoring the less savoury aspects of industrialisation such as working conditions).
+The bee emblem can be found all over the city, and it may well have been the *inexplicable* appearance of a bee-emblazoned bollard in the space that gave me the idea that we should do something around the worker bee. It represented making, working hard, being industrious, creative and coming together (while nicely ignoring the less savoury aspects of industrialisation such as working conditions).
 
  As quickly as the bollard appeared it disappeared, but the idea stayed.
 
@@ -56,7 +56,7 @@ The second stroke of genius was when someone suggested using ENIG (Electroless n
 
 With the PCBee v0 designed, my friend checked the schematics over (turns out I'd shorted the battery which would have made it become a very small heater, very temporarily) and he fixed the issue. We were ready to go ahead and get a small batch made up - from the fabulous Elecrow.
 
-Receiving a bundle of bees in the post was exhilerating, and as you can see - they looked stunning. I rushed the space and we all soldered some up, and they worked!
+Receiving a bundle of bees in the post was exhilarating, and as you can see - they looked stunning. I rushed the space and we all soldered some up, and they worked!
 
 It was time to get serious about this.
 
@@ -118,7 +118,7 @@ It was amazing to see and really feel the pride and excitement from such a simpl
 We also had no injuries throughout the event, which meant no paperwork! Double success.
 
 ### End of Day One
-About to collapse, and tidying up our stand for day two, we totted up how many sales we'd had. From just day one of the event, we had already broken even. I was so delighted, the bees really had flown. We went for a saveagely mediocre pizza (which nonetheless felt like heaven after the day), and started to fall into respective food comas. 
+About to collapse, and tidying up our stand for day two, we totted up how many sales we'd had. From just day one of the event, we had already broken even. I was so delighted, the bees really had flown. We went for a savagely mediocre pizza (which nonetheless felt like heaven after the day), and started to fall into respective food comas. 
 
 
 As we tried to perk ourselves up by migrating to a slightly-sticky dessert parlour which had music just a bit too loud and smelled distinctly of purple, we rejoiced that it didn't matter what happened tomorrow - we'd made our money back, people loved them, and we were having great fun. We could just enjoy the next day for what it was.
