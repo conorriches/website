@@ -1,5 +1,5 @@
 ---
-date: "2022-01-01"
+date: "2018-10-01"
 title: "Teaching soldering with custom designed PCBee"
 excerpt: "Going to MakeFest and MakerFaire and teaching the public how to solder really cool blinking Bee badges"
 ---
