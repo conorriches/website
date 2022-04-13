@@ -71,6 +71,40 @@ data-styled.g3[id="sc-global-dxHhYR1"]{content:"sc-global-dxHhYR1,"}/*!sc*/
 <p>We are going to use the new <a href="https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps">libcamera</a> stack - so make sure you have a recent version of Raspberry Pi OS installed and everything is up to date.</p>
 <div style="clear:both"></div>
 <h2>Parts required</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b95e20bf070bf3b68b8e193b30fe99ca/c08c5/seed.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDAf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAA//aAAwDAQACEAMQAAABliVIFM3/xAAaEAACAgMAAAAAAAAAAAAAAAABAgASEyEi/9oACAEBAAEFAs27TmMxUqQwss//xAAXEQADAQAAAAAAAAAAAAAAAAAAASGB/9oACAEDAQE/Aa2af//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPwFDLL//xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIRIRAz/9oACAEBAAY/AtiXx4mXKJ5o/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBUWFx4f/aAAgBAQABPyFpiNeIcGC9MVbofcEsbuMhWGjE+yz/2gAMAwEAAgADAAAAEPsP/8QAGBEBAQADAAAAAAAAAAAAAAAAAQARIfD/2gAIAQMBAT8QNBbBxv/EABcRAAMBAAAAAAAAAAAAAAAAAAABEWH/2gAIAQIBAT8QRtIrT//EABsQAQADAQEBAQAAAAAAAAAAAAEAETEhQVHR/9oACAEBAAE/EKkIad1vqwrrsYYZcRtegt+ws7Snv2MO2hmjw8iSgVNaM//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Once set up you have a really nice setup that&#39;s really portable... just add birds!"
+        title="Once set up you have a really nice setup that&#39;s really portable... just add birds!"
+        src="/static/b95e20bf070bf3b68b8e193b30fe99ca/1c72d/seed.jpg"
+        srcset="/static/b95e20bf070bf3b68b8e193b30fe99ca/a80bd/seed.jpg 148w,
+/static/b95e20bf070bf3b68b8e193b30fe99ca/1c91a/seed.jpg 295w,
+/static/b95e20bf070bf3b68b8e193b30fe99ca/1c72d/seed.jpg 590w,
+/static/b95e20bf070bf3b68b8e193b30fe99ca/c08c5/seed.jpg 640w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Once set up you have a really nice setup that&#39;s really portable... just add birds!</figcaption>
+  </figure></p>
 <ul>
 <li>A Raspberry Pi, with up-to-date OS, connected to</li>
 <li>Pi HQ Camera, with a</li>
@@ -88,7 +122,6 @@ data-styled.g3[id="sc-global-dxHhYR1"]{content:"sc-global-dxHhYR1,"}/*!sc*/
 <li><a href="https://roboticsbackend.com/enable-ssh-on-raspberry-pi-raspbian/">Enabling ssh</a></li>
 <li>Basic linux commands</li>
 </ul>
-<hr>
 <h2>Step Zero - Optional - Get the touchscreen working</h2>
 <p>I chose a 3.5inch display which plugs into the 40 pin GPIO header as we won't be using the GPIO for anything else and it means the entire camera and screen construction will nicely hold together as one piece. We've essentially just made a really fancy digital camera!</p>
 <p><figure class="gatsby-resp-image-figure" style="">
@@ -184,7 +217,6 @@ data-styled.g3[id="sc-global-dxHhYR1"]{content:"sc-global-dxHhYR1,"}/*!sc*/
 <li>This is a really fun time to see how the lens works, play with adjustment, focus, light levels etc.</li>
 </ul>
 <p>Save the captured image by running <a href="https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-jpeg">libcamera-jpeg</a> by running <code>libcamera-jpeg -o test.jpg</code>. Practice taking photos and viewing the saved image on the Pi.</p>
-<div style="clear:both"></div>
 <h3>Copying images from the Pi to another device</h3>
 <p>To really enjoy and share the photos you take with <code>libcamera-jpeg</code> you'll want to copy them to your computer or device.</p>
 <h3>Backup to the cloud</h3>
@@ -415,4 +447,4 @@ Icon=/usr/share/raspberrypi-artwork/raspberry-pi-logo-small.png
 </ul>
 <p>There's also a load of other options on the utilities above to play around with.</p>
 <p>And this is all without having to write a script!</p>
-<p><strong>Happy birdwatching!</strong></p></div></div></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/birdwatching/";window.___webpackCompilationHash="610fd3e4e8a080bc88aa";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b3a354b3920be8735902.js"],"app":["/app-09f5a5d8f02f5d4891e1.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-5f721c8ab0614a49306d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-413fc8a791f45a52533b.js"],"component---src-pages-about-js":["/component---src-pages-about-js-f59b58093c725757f7c7.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-873c7594eaf65356167d.js"],"component---src-pages-index-js":["/component---src-pages-index-js-cecd8566f9a61d7a582a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-7126215443361850fc33.js"]};/*]]>*/</script><script src="/polyfill-b3a354b3920be8735902.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-7126215443361850fc33.js" async=""></script><script src="/c51c6ee4d4abaee930c3281d92f281b51f89c984-f545267e6349ea292ef8.js" async=""></script><script src="/app-09f5a5d8f02f5d4891e1.js" async=""></script><script src="/framework-e915d9de464aff215b81.js" async=""></script><script src="/webpack-runtime-dbc44e4715bfc63d0e44.js" async=""></script></body></html>
+<p><strong>Happy birdwatching!</strong></p></div></div></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/birdwatching/";window.___webpackCompilationHash="7a8e2c77884c3ca858f9";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-b3a354b3920be8735902.js"],"app":["/app-09f5a5d8f02f5d4891e1.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-5f721c8ab0614a49306d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-413fc8a791f45a52533b.js"],"component---src-pages-about-js":["/component---src-pages-about-js-f59b58093c725757f7c7.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-873c7594eaf65356167d.js"],"component---src-pages-index-js":["/component---src-pages-index-js-cecd8566f9a61d7a582a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-7126215443361850fc33.js"]};/*]]>*/</script><script src="/polyfill-b3a354b3920be8735902.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-7126215443361850fc33.js" async=""></script><script src="/c51c6ee4d4abaee930c3281d92f281b51f89c984-f545267e6349ea292ef8.js" async=""></script><script src="/app-09f5a5d8f02f5d4891e1.js" async=""></script><script src="/framework-e915d9de464aff215b81.js" async=""></script><script src="/webpack-runtime-dbc44e4715bfc63d0e44.js" async=""></script></body></html>
