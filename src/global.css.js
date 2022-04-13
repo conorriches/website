@@ -60,7 +60,7 @@ export default createGlobalStyle`
       to right,
       #0575e6,
       #021b79
-    ); 
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -74,7 +74,11 @@ export default createGlobalStyle`
   h2{
     font-size:1.8em;
     line-height:1.2em;
-    margin: 0.6em 0;
+    margin-bottom: 0.6em;
+    margin-top: 1.5em;
+    border-left: 0.2em solid #0575e6;
+    padding: 0.3em;
+    padding-left: 0.5em;
   }
 
   h3{

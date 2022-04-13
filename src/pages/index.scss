@@ -57,12 +57,14 @@
     }
 
     @media (min-width: 768px) {
-        width: 56%;
+        width: 40%;
     }
 }
 
 figcaption.gatsby-resp-image-figcaption {
-    padding: 0.5em;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #333;
 }
 
 code {
