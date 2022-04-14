@@ -210,18 +210,35 @@ You can tweak the parameters by looking at [the libcamera-detect docs](https://w
 ## Step Six - Optional - Touchscreen shortcuts
 If you have a touchscreen, you can use desktop shortcuts to run commands such as
 * `libcamera-hello -t 30` as a viewfinder and way of setting focus when on site
-* `libcamera-detect ...` to run the program!
+* `libcamera-detect ...` to run the bird spotting program!
+
+### Create a shell script
+To keep things separated, we will create a shell script in our home directory (`/home/pi`) that will run the `libcamera-detect` command. Create the file by running `nano ~/detect.sh` and paste into it the following:
+
+```
+#!/bin/bash
+
+DATE=$(date +"%Y-%m-%d_%H%M")
+libcamera-detect -t 0 --lores-width 400 --lores-height 300 --post-process-file object_detect_tf.json --object bird -o birds/$DATE-%04d.jpg
+```
+* This will get run the `libcamera-detect` application
+* It will save the images with a file name that starts with the current date and ends with the increment number, e.g. `2020-04-14_1015_0001.jpg` 
+* That way we won't get any files overwritten even if there are two photos taken in the same minute, and even if we stop and restart the script.
+* Note: the date is generated once when the script is started, so it won't update the time and date on each photo taken, but they will still be incremented
+
+Now do the same for `libcamera-hello` - create a file called `viewfinder.sh` with the `libcamera-hello -t 30` command inside.
+Next we will get these shell scripts to run when a desktop shortcut is pressed.
 
 ### Creating desktop shortcuts
-* Navigate to the Desktop directory `cd ~/Desktop` - anything here will show up
-* Create a file for the Viewfinder script: `nano Viewfinder.desktop`
+* Navigate to the Desktop directory `cd ~/Desktop` - anything saved here will show up on the Desktop.
+* Create a new file: `nano Detect.desktop`
 * Paste into it:
   ```
   [Desktop Entry]
   Comment=Preview
   Terminal=true
-  Name=Viewfinder
-  Exec=libcamera-hello -t 30000
+  Name=Detect
+  Exec=lxterminal -e "/home/pi/detect.sh"
   Type=Application
   Icon=/usr/share/raspberrypi-artwork/raspberry-pi-logo-small.png
   ```
@@ -230,10 +247,10 @@ If you have a touchscreen, you can use desktop shortcuts to run commands such as
   * Edit menu -> Preferences
   * Select the first checkbox "Open files with single click"
   * Select the option lower down not to ask options when opening executables
+* Do the same for `Viewfinder` which will run the `viewfinder.sh` file which will in turn run `libcamera-hello`
 
-Now do the same for `libcamera-detect`!
 
-You now have two icons on the Desktop which when pressed will run the viewfinder and run teh script respectively!
+You now have two icons on the Desktop, one will open up `libcamera-hello` and acts as a viewfinder, and the other which will open up `libcamera-detect`.
 
 ## Tips on using the camera
 * Use a good tripod so the camera is steady and resistant to any wind you'll likely get - you don't want it falling over!
