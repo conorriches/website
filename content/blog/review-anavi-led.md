@@ -2,6 +2,7 @@
 date: "2022-04-09"
 title: "Review - Anavi Light Controller"
 excerpt: "Open Source Hardware and Software Done Right. Extremely convenient and well built LED lighting controller, but perhaps misses a couple of 'nice to have' features."
+featuredImage: "../images/home/colourful.jpg"
 ---
 
 ## Purchase and Review Facts
@@ -12,7 +13,7 @@ excerpt: "Open Source Hardware and Software Done Right. Extremely convenient and
 | Date Reviewed | April 2022                                                 |
 | Sponsored?    | No. No sponsors, gifts, incentives, or request for review. |
 | Price I Paid  | £22.80                                                     |
-| Rating        | ⭐⭐⭐⭐                                                       |
+| Rating        | ⭐⭐⭐                                                       |
 
 ## Introducing the Anavi Light Controller
 The Anavi Light Controller was [recently added to The Pi Hut](https://thepihut.com/products/anavi-light-controller), as an open source hardware project. This means that you not only can buy the thing, but you get all the files you need to make your own version. 
@@ -40,4 +41,8 @@ It's clear that open source is fundamentally important to Anavi products, and th
 The [software and documentation](https://github.com/AnaviTechnology/anavi-docs/blob/master/anavi-light-controller/anavi-light-controller.md) is gold-standard, and I found it really easy to get going with. The [article on how to flash your own firmware](https://www.anavi.org/article/220/) was great for me, and it worked perfectly. This in many ways justifies the slightly higher price point - it feels very much like "after sales support" having such a wealth of documentation and examples that are written in Arduino code, so for your average maker it's a breeze, and pleasure to use. Big props to Anavi for doing this so well.
 
 ## Summary
-A really cool board, embodying everything that is great about open source hardware and software, clearly made with care and done really well. A touch expensive and maybe missing a few features like breakout GPIO pins but it's a great place to start and great to support indie makers and open source hardware. I can really see myself hacking the existing designs to make my own version, further showing the joys of open source hardware.
+An interesting board, embodying everything that is great about open source hardware and software, clearly made with care and done really well. A touch expensive and maybe missing a few features like breakout GPIO pins but it's a great place to start and great to support indie makers and open source hardware. I can really see myself hacking the existing designs to make my own version, further showing the joys of open source hardware.
+
+
+### Update
+It didn't last long. Very quickly I found odd behaviour crept in, likely from the ESP8266 which isn't specific to this product. Sadly now it's e-waste and for the money it is disappointing so I've adjusted the rating to three stars.

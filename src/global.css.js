@@ -73,7 +73,7 @@ export default createGlobalStyle`
 
   h2{
     font-size:1.8em;
-    line-height:1.2em;
+    line-height:2em;
     margin-bottom: 0.6em;
     margin-top: 1.5em;
     border-left: 0.2em solid #0575e6;
@@ -83,8 +83,11 @@ export default createGlobalStyle`
 
   h3{
     font-size: 1.2em;
-    line-height:1.2em;
-    margin: 0.6em 0;
+    line-height:1.4em;
+    margin: 1.5em 0 0.6em 0;
+    border-left: 0.2em solid #0575e6;
+    padding: 0.3em;
+    padding-left: 0.5em;
   }
 
   h4{
@@ -98,7 +101,7 @@ export default createGlobalStyle`
   }
 
   li {
-    line-height:1.2em;
+    line-height:1.4em;
   }
 
   blockquote, q {
@@ -138,7 +141,6 @@ export default createGlobalStyle`
 
   code {
     font-family: courier;
-    background: #eee;
     display: inline-block;
     padding: 0 0.5em;
   }
@@ -151,6 +153,7 @@ export default createGlobalStyle`
     margin-top:0.6em;
     margin-bottom: 2.4rem;
     line-height:1.4em;
+    font-family: monospace;
   }
 
   strong {
@@ -160,4 +163,10 @@ export default createGlobalStyle`
   em {
     font-style: italic;
   }
+
+  h1,h2,h3,h4,h5,h6 {
+    clear:both;
+  }
+
+
 `;

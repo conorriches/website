@@ -9,6 +9,19 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/images`,
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-plugin-eslint`,
     {
@@ -37,7 +50,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
-              showCaptions: true
+              showCaptions: true,
+              linkImagesToOriginal: false
             },
           },
           {
@@ -54,9 +68,16 @@ module.exports = {
               useFrontmatterSlug: false // default, if true it will use the slug defined in the post frontmatter
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+            }
+          }
         ],
       },
     },
+
 
   ],
 };

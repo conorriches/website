@@ -81,6 +81,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             excerpt
+            featuredImage {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  srcWebp
+                }
+              }
+            }
           }
         }
       }

@@ -16,49 +16,67 @@
     text-decoration: none;
     display: flex;
 
+
+    &--back {
+      width: 10rem;
+      background: #e9c7d7;
+      padding-left: 4rem;
+    }
+
     .chevron {
         right: 1.2em;
         top: 1em;
         position: absolute;
-    }
 
-    .chevron::before {
-        border-style: solid;
-        border-width: 0.25em 0.25em 0 0;
-        content: '';
-        display: inline-block;
-        height: 0.45em;
-        left: 0.15em;
-        position: relative;
-        top: 0.15em;
-        transform: rotate(-45deg);
-        vertical-align: top;
-        width: 0.45em;
+        &:before {
+          border-style: solid;
+          border-width: 0.25em 0.25em 0 0;
+          content: '';
+          display: inline-block;
+          height: 0.45em;
+          left: 0.15em;
+          position: relative;
+          top: 0.15em;
+          transform: rotate(-45deg);
+          vertical-align: top;
+          width: 0.45em;
+        }
+
+        &--left{
+          right: unset;
+
+          &:before{
+            left: -2rem;
+            transform: rotate(225deg);
+          }
+        }
+
     }
 
     .chevron.right:before {
         left: 0;
         transform: rotate(45deg);
     }
+
 }
 
 .gatsby-resp-image-figure {
-    border-bottom: 1px dotted black;
-    width: 100%;
+  border-bottom: 1px dotted black;
+  width: 100%;
 
-    &:nth-of-type(even) {
-        margin: 0 1.5em 1em 0;
-        float: left;
-    }
+  &:nth-of-type(even) {
+      margin: 0 1.5em 1em 0;
+      float: left;
+  }
 
-    &:nth-of-type(odd) {
-        float: right;
-        margin: 0 0 1em 1.5em;
-    }
+  &:nth-of-type(odd) {
+      float: right;
+      margin: 0 0 1em 1.5em;
+  }
 
-    @media (min-width: 768px) {
-        width: 40%;
-    }
+  @media (min-width: 768px) {
+      width: 40%;
+  }
 }
 
 figcaption.gatsby-resp-image-figcaption {
@@ -69,7 +87,6 @@ figcaption.gatsby-resp-image-figcaption {
 
 code {
     font-family: 'courier';
-    background: #eee;
     color: black;
 }
 

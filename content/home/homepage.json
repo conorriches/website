@@ -2,18 +2,33 @@
   "title": "Home",
   "content": "intro.md",
   "gallery": [{
-    "title": "Projects",
-    "copy": "Mischief I'm getting into",
+    "title": "Raspberry Pi HQ Camera",
+    "copy": "So much fun and great quality photos",
     "image": "../images/home/camera.jpg"
   },
   {
-    "title": "Exploration & Old stuff",
-    "copy": "Anything post-industrial",
+    "title": "A rooftop adventure",
+    "copy": "High up in the middle of Manchester is this ladder in the sky",
     "image": "../images/home/sky2.jpg"
   },
   {
     "title": "Context-Free",
-    "copy": "HTTP 418",
+    "copy": "We found this at 4am. I Don't know how this got here either and we didn't go in!",
     "image": "../images/home/roof.jpg"
+  },
+  {
+    "title": "Birb - our resident Blue Tit",
+    "copy": "This photo is from my birbcam project, taken automatically.",
+    "image": "../images/birdwatching/blue.jpg"
+  },
+  {
+    "title": "Talking about projects",
+    "copy": "Sometimes reflecting on the process and learning is the best bit",
+    "image": "../images/bees/present.jpg"
+  },
+  {
+    "title": "Pink sunsets are the best",
+    "copy": "Sometimes I see something that catches my eye",
+    "image": "../images/home/arch.jpg"
   }]
 }

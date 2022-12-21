@@ -1,35 +1,32 @@
 .PostLink{
-    border-left:2px solid #ff6a00;
-    margin-bottom:0.6em;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 
     &__Link{
-        padding:0.6em;
-        text-decoration: none;
-        vertical-align: middle;
-
-       
-
+      text-decoration: none;
+      vertical-align: middle;
+      display: flex;
     }
 
-    &__LinkWrapper{
-        display:flex;
+    &__Details {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem;
     }
 
     &__Title{
-        color:#ee0979;
-        font-size:1em;
-        line-height:1.6em;
-        @media (min-width: 768px){
-            font-size:1.2em;    
-        }
+      color:#ee0979;
+      font-size:2.5rem;
+      margin-bottom: 1rem;
+      @media (min-width: 768px){
+          font-size:2rem;
+      }
     }
-    
-    &__Excerpt{
-        color:black;
-        font-size:0.8em;
-        line-height: 1em;
-    }
-   
 
+    &__Excerpt{
+      color:#444;
+      font-size:1.6rem;
+      line-height: 2rem;
+    }
 }
 

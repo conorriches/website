@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
-import Box from 'components/box';
 import Gallery from 'components/gallery';
 import { graphql, Link } from 'gatsby';
 
@@ -17,6 +16,8 @@ const Index = ({ data }) => (
     <Link to="/blog" className="BlogLink">
       Visit my blog <span className="chevron right"></span>
     </Link>
+
+    <h3>Random thoughts and photos</h3>
     <Gallery items={data.homeJson.gallery} />
   </Layout>
 );
@@ -42,8 +43,8 @@ export const query = graphql`
         copy
         image {
           childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(maxHeight: 300, quality:90, maxWidth: 300) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

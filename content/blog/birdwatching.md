@@ -219,7 +219,8 @@ To keep things separated, we will create a shell script in our home directory (`
 #!/bin/bash
 
 DATE=$(date +"%Y-%m-%d_%H%M")
-libcamera-detect -t 0 --lores-width 400 --lores-height 300 --post-process-file object_detect_tf.json --object bird -o birds/$DATE-%04d.jpg
+mkdir $DATE
+libcamera-detect -t 0 --lores-width 400 --lores-height 300 --post-process-file object_detect_tf.json --object bird -o birds/$DATE/%04d.jpg
 ```
 * This will get run the `libcamera-detect` application
 * It will save the images with a file name that starts with the current date and ends with the increment number, e.g. `2020-04-14_1015_0001.jpg` 

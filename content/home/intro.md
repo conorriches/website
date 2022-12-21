@@ -1,3 +1,5 @@
 ## Website of a maker, software engineer, and human
 
-> "A cup of tea would restore my normality."
+
+You are a child of the universe no less than the trees and the stars; you have a right to be here.<br>
+\- Desiderata

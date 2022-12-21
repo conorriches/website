@@ -12,9 +12,9 @@ class Transition extends PureComponent {
         opacity: 1,
         delay: timeout,
         delayChildren: timeout,
-        type: 'ease',
+        type: 'easeInOut',
       },
-      exit: { opacity: 0, type: 'ease' },
+      exit: { opacity: 0, type: 'easeInOut' },
     });
 
     // To enable page transitions on mount / initial load,
