@@ -1,0 +1,697 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.25.1"/><meta data-react-helmet="true" content="IE=edge" http-equiv="X-UA-Compatible"/><meta data-react-helmet="true" content="width=device-width,initial-scale=1.0,user-scalable=yes" name="viewport"/><meta data-react-helmet="true" content="notes from the hackerspace" name="apple-mobile-web-app-title"/><meta data-react-helmet="true" content="notes from the hackerspace" property="og:title"/><meta data-react-helmet="true" content="notes from the hackerspace" name="twitter:title"/><meta data-react-helmet="true" content="notes from the hackerspace - a blog from cone" name="description"/><meta data-react-helmet="true" content="notes from the hackerspace - a blog from cone" property="og:description"/><meta data-react-helmet="true" content="notes from the hackerspace - a blog from cone" name="twitter:description"/><meta data-react-helmet="true" content="yes" name="apple-mobile-web-app-capable"/><meta data-react-helmet="true" content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta data-react-helmet="true" content="#fff" name="theme-color"/><meta data-react-helmet="true" content="notes from the hackerspace" name="application-name"/><meta data-react-helmet="true" content="website" property="og:type"/><meta data-react-helmet="true" content="notes from the hackerspace" property="og:site_name"/><meta data-react-helmet="true" content="966242223397117" property="fb:app_id"/><meta data-react-helmet="true" content="summary_large_image" name="twitter:card"/><meta data-react-helmet="true" content="@gatsbyjs" name="twitter:site"/><meta data-react-helmet="true" content="@gatsbyjs" name="twitter:creator"/><meta data-react-helmet="true" content="notes from the hackerspace" name="twitter:text:title"/><meta data-react-helmet="true" content="https://conorriches.co.uk/blog/access-control/" property="og:url"/><meta data-react-helmet="true" content="https://conorriches.co.uk/blog/access-control/" name="twitter:url"/><meta data-react-helmet="true" content="https://conorriches.co.uk/blog/access-control//twitter-card.jpg" property="og:image"/><meta data-react-helmet="true" content="1024" property="og:image:width"/><meta data-react-helmet="true" content="512" property="og:image:height"/><meta data-react-helmet="true" content="https://conorriches.co.uk/blog/access-control//twitter-card.jpg" name="twitter:image"/><meta data-react-helmet="true" content="1024" name="twitter:image:width"/><meta data-react-helmet="true" content="512" name="twitter:image:height"/><meta data-react-helmet="true" content="https://conorriches.co.uk/blog/access-control//twitter-card.jpg" property="og:image"/><meta data-react-helmet="true" content="1024" property="og:image:width"/><meta data-react-helmet="true" content="512" property="og:image:height"/><meta data-react-helmet="true" content="#fff" name="msapplication-TileColor"/><meta data-react-helmet="true" content="/icons/mstile-70x70.png" name="msapplication-square70x70"/><meta data-react-helmet="true" content="/icons/mstile-144x144.png" name="msapplication-square144x144"/><meta data-react-helmet="true" content="/icons/mstile-150x150.png" name="msapplication-square150x150"/><meta data-react-helmet="true" content="/icons/mstile-310x150.png" name="msapplication-wide310x150"/><meta data-react-helmet="true" content="/icons/mstile-310x310.png" name="msapplication-square310x310"/><style data-href="/styles.b9597f479f9337497194.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.Container{align-items:center;display:flex;justify-content:space-between;padding:2rem 0 0}@media(min-width:768px){.Container{padding-top:4rem}}.Container a{color:#757575;text-decoration:none;transition:color .2s ease}.Container a:hover{color:inherit}.Fade{-webkit-animation-duration:10s;-webkit-animation-iteration-count:infinite;-webkit-animation-name:MOVE-BG;-webkit-animation-timing-function:steps(15);background:#4ca1af;background:linear-gradient(90deg,#c4e0e5,#4ca1af);height:5px;width:200%}.Fade__Wrapper{height:1px;margin-top:1.2em;overflow:hidden;width:100%}.Fade__Wrapper--top{height:5px;margin-top:0;position:fixed;z-index:11}@-webkit-keyframes MOVE-BG{50%{-webkit-transform:translateX(-50%)}0%{-webkit-transform:translateX(0)}}.Fade--blue{background:#0575e6;background:linear-gradient(90deg,#021b79,#0575e6,#021b79)}.Fade--light{background:#8e2de2;background:linear-gradient(90deg,#4a00e0,#8e2de2)}.Fade--millennial{background:#fc00ff;background:linear-gradient(90deg,#00dbde,#fc00ff)}.FadeHider{background:#fff;background:linear-gradient(180deg,#fff 50%,transparent);height:14em;position:absolute;width:100%;z-index:-1}.Box{max-width:700px;padding:1rem}@media(min-width:768px){.Box{padding:2rem 4rem}}.Layout{margin:0 5%}@media(min-width:768px){.Layout{margin:0 20%}}.Layout__Main{padding:1.8em 0}.PostLink{font-size:2rem;margin-bottom:2rem}.PostLink__Link{display:flex;text-decoration:none;vertical-align:middle}.PostLink__Details{display:flex;flex-direction:column;padding:0 1rem}.PostLink__Title{color:#ee0979;font-size:2.5rem;margin-bottom:1rem}@media(min-width:768px){.PostLink__Title{font-size:2rem}}.PostLink__Excerpt{color:#444;font-size:1.6rem;line-height:2rem}.Blog__SearchWrapper{display:flex;margin-bottom:1.8em;width:100%}.Blog__Search{border:solid #00c9ff;border-width:1px 1px 5px;color:#363795;width:100%}.BlogLink,.Blog__Search{font-size:1em;line-height:1.9em;margin-top:1em;padding:.6em}.BlogLink{background:#ee0979;background:linear-gradient(90deg,#ff6a00,#ee0979);border:0;color:#fff;display:flex;position:relative;text-decoration:none}.BlogLink--back{background:#e9c7d7;padding-left:4rem;width:10rem}.BlogLink .chevron{position:absolute;right:1.2em;top:1em}.BlogLink .chevron:before{border-style:solid;border-width:.25em .25em 0 0;content:"";display:inline-block;height:.45em;left:.15em;position:relative;top:.15em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);vertical-align:top;width:.45em}.BlogLink .chevron--left{right:unset}.BlogLink .chevron--left:before{left:-2rem;-webkit-transform:rotate(225deg);transform:rotate(225deg)}.BlogLink .chevron.right:before{left:0;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.gatsby-resp-image-figure{border-bottom:1px dotted #000;width:100%}.gatsby-resp-image-figure:nth-of-type(2n){float:left;margin:0 1.5em 1em 0}.gatsby-resp-image-figure:nth-of-type(odd){float:right;margin:0 0 1em 1.5em}@media(min-width:768px){.gatsby-resp-image-figure{width:40%}}figcaption.gatsby-resp-image-figcaption{color:#333;font-size:.9em;padding:1em}code{color:#000;font-family:courier}table{border:1px solid blue;text-align:left}table td,table th{border:1px dashed purple;padding:1em}table thead{background:transparent linear-gradient(90deg,#0575e6,#021b79);color:#fff;text-align:left}</style><style data-styled="" data-styled-version="5.3.6">.kFkNph{display:block;font-weight:500;font-size:2rem;line-height:1.2;}/*!sc*/
+@media (max-width:48em){.kFkNph{font-size:2rem;}}/*!sc*/
+data-styled.g1[id="sc-bcXHqe"]{content:"kFkNph,"}/*!sc*/
+.ggcEMu ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;list-style:none;padding:0;}/*!sc*/
+.ggcEMu ul li{text-transform:uppercase;font-size:1.3rem;}/*!sc*/
+.ggcEMu ul li + li{margin-left:2rem;}/*!sc*/
+data-styled.g2[id="sc-gswNZR"]{content:"ggcEMu,"}/*!sc*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font-family:'Varela Round',sans-serif;vertical-align:baseline;}/*!sc*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}/*!sc*/
+html{font-size:62.5%;}/*!sc*/
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:1;font-size:1.6rem;color:#000;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;-webkit-font-feature-settings:"pnum";font-feature-settings:"pnum";font-variant-numeric:proportional-nums;overflow-y:scroll;}/*!sc*/
+h1{background:#0575e6;background:-webkit-linear-gradient( to right, #0575e6, #021b79 );background:linear-gradient( to right, #0575e6, #021b79 );-webkit-background-clip:text;-webkit-text-fill-color:transparent;}/*!sc*/
+h1{font-size:2.4em;line-height:1.2em;margin:0.6em 0;}/*!sc*/
+h2{font-size:1.8em;line-height:2em;margin-bottom:0.6em;margin-top:1.5em;border-left:0.2em solid #0575e6;padding:0.3em;padding-left:0.5em;}/*!sc*/
+h3{font-size:1.2em;line-height:1.4em;margin:1.5em 0 0.6em 0;border-left:0.2em solid #0575e6;padding:0.3em;padding-left:0.5em;}/*!sc*/
+h4{font-weight:bold;line-height:1.4em;margin:0.6em 0;}/*!sc*/
+ol,ul{margin-left:1.8em;}/*!sc*/
+li{line-height:1.4em;}/*!sc*/
+blockquote,q{quotes:none;}/*!sc*/
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}/*!sc*/
+table{border-collapse:collapse;border-spacing:0;}/*!sc*/
+a{color:#0575E6;}/*!sc*/
+pre{background:#eee;display:block;padding:2rem;margin-top:4rem;overflow:auto;font-size:85%;line-height:1.45;border-radius:5px;color:#0575E6;border:1px solid #ddd;background:#eee;border-left:3px solid;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;}/*!sc*/
+code{font-family:courier;display:inline-block;padding:0 0.5em;}/*!sc*/
+video{max-width:100%;}/*!sc*/
+p{margin-top:0.6em;margin-bottom:2.4rem;line-height:1.4em;font-family:monospace;}/*!sc*/
+strong{font-weight:900;}/*!sc*/
+em{font-style:italic;}/*!sc*/
+h1,h2,h3,h4,h5,h6{clear:both;}/*!sc*/
+data-styled.g3[id="sc-global-lgOIVU1"]{content:"sc-global-lgOIVU1,"}/*!sc*/
+</style><title data-react-helmet="true">notes from the hackerspace</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Varela+Round&amp;display=swap" rel="stylesheet" type="text/css"/><link data-react-helmet="true" rel="canonical" href="https://conorriches.co.uk/blog/access-control/"/><link data-react-helmet="true" href="/manifest.json" rel="manifest"/><link data-react-helmet="true" href="/icons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/><link data-react-helmet="true" href="/icons/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/><link data-react-helmet="true" href="/icons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/><link data-react-helmet="true" href="/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/><link data-react-helmet="true" href="/icons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/><link data-react-helmet="true" href="/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/><link data-react-helmet="true" href="/icons/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/><link data-react-helmet="true" href="/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/><link data-react-helmet="true" href="/icons/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167"/><link data-react-helmet="true" href="/icons/apple-touch-icon-180x180.png" rel="icon" sizes="180x180" type="image/png"/><link data-react-helmet="true" href="/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link data-react-helmet="true" href="/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","url":"https://conorriches.co.uk/blog/access-control/","name":"notes from the hackerspace","alternateName":"notes from the hackerspace"}]</script><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div><div class="Fade__Wrapper Fade__Wrapper--top"><div class="Fade Fade--millennial"></div></div><div class="Layout"><div><div class="Container"><a href="/"><h1 class="sc-bcXHqe kFkNph">notes from the hackerspace</h1></a><nav class="sc-gswNZR ggcEMu"><ul><li><a href="/about">About</a></li><li><a href="/blog">Blog</a></li></ul></nav></div><div class="Fade__Wrapper"><div class="Fade Fade--millennial"></div></div></div><div class="Layout__Main"><div><a class="BlogLink BlogLink--back" href="/blog">Back <span class="chevron chevron--left"></span></a><small></small><h1>Making an access control system with Wiegand readers and the Raspberry Pi</h1><div><p>This is a fun project which shows how easy it is to make an entry system with industrial components and a Raspberry Pi.</p>
+<p>The hackerspace has an entry system which has started to show its age - it requires a Pi 1 and occasionally breaks in new and exciting ways. It was therefore time for a new setup, one which was open for people to see how it works, and fix as things inevitably break.</p>
+<p>The benefits of this system is that everything is modular, replaceable, easy to see and understand, easy to upgrade, and highly debuggable. Once it's made to your liking, it can be placed inside an enclosure or, as in my case, mounted in a clear acrylic housing for people to see.</p>
+<h3>Inputs</h3>
+<ul>
+<li>Keypad (4x3 matrix type)</li>
+<li><a href="https://www.getkisi.com/guides/wiegand">Wiegand</a> reader (fob reader, but can be any Wiegand device)</li>
+<li>Request to Exit button</li>
+<li>Doorbell</li>
+</ul>
+<h3>Outputs</h3>
+<ul>
+<li>Two relays
+<ul>
+<li>One for the main lock</li>
+<li>One for a future use - currently operating some lights to illuminate the step into the premises</li>
+</ul>
+</li>
+<li>Beeper</li>
+<li>LED status lights
+<ul>
+<li>Power on</li>
+<li>Run (shows the script is functional and not frozen/stopped)</li>
+<li>Error (illuminates when error logs are written)</li>
+</ul>
+</li>
+</ul>
+<h3>Entry list</h3>
+<p>The system operates based off an entry list. The entry list is a CSV file that contains the permitted users. This file is regularly updated from an external source for this implementation, but can be a static file you write to manually, or you could make a simple CSV editing interface.
+The main benefit of this approach is that if the internet connection fails when a user attempts to enter, the system will still function as it has a local cache of permitted users. If the entry list hasn't been updated in a while, because of some error fetching an updated version, we can raise an error.</p>
+<h2>Hardware</h2>
+<p>The system has key parts that all bolt together and talk to one another. I'll address each aspect in turn.</p>
+<h3>Mounting plate / backboard</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/9oADAMBAAIQAxAAAAGEh6GjTaR//8QAGhAAAgMBAQAAAAAAAAAAAAAAAAIBERIDIv/aAAgBAQABBQIqbxyMtCo1nqT/xAAVEQEBAAAAAAAAAAAAAAAAAAAQMf/aAAgBAwEBPwGn/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8BECf/xAAcEAABBAMBAAAAAAAAAAAAAAAAAREhQRAiUYH/2gAIAQEABj8CkRe1hrSTbwc//8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAITFBUWGB/9oACAEBAAE/IWha+4AKeNRuofYXaqCiR5DQpRD3eZP/2gAMAwEAAgADAAAAELff/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAEDAQE/EHCT/8QAGBEBAQADAAAAAAAAAAAAAAAAAQARIVH/2gAIAQIBAT8QbibnHb//xAAfEAEAAQQBBQAAAAAAAAAAAAABEQAhMUGBUXGhsdH/2gAIAQEAAT8QhaBXE5+eqWARQADk3SyQuy3w0qEuVa2cNWIU7uXXioJMDKMjEs9q/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Connections are made to the Pi via this GPIO screw terminal hat"
+        title="Connections are made to the Pi via this GPIO screw terminal hat"
+        src="/static/696de9043782b79702cf1e6c3c91a32c/1c72d/connections.jpg"
+        srcset="/static/696de9043782b79702cf1e6c3c91a32c/a80bd/connections.jpg 148w,
+/static/696de9043782b79702cf1e6c3c91a32c/1c91a/connections.jpg 295w,
+/static/696de9043782b79702cf1e6c3c91a32c/1c72d/connections.jpg 590w,
+/static/696de9043782b79702cf1e6c3c91a32c/a8a14/connections.jpg 885w,
+/static/696de9043782b79702cf1e6c3c91a32c/fbd2c/connections.jpg 1180w,
+/static/696de9043782b79702cf1e6c3c91a32c/93719/connections.jpg 4000w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Connections are made to the Pi via this GPIO screw terminal hat</figcaption>
+  </figure>
+You will need:</p>
+<ul>
+<li>backboard made of some stiff material (ideally acrylic)</li>
+<li>2.5mm standoffs and fixings</li>
+<li>(optional) 3mm standoffs and fixings</li>
+</ul>
+<p>The whole system is mounted a backboard. Acrylic is ideal as it can be cut by hand or laser and won't warp, but wood such as plywood, OSB, or even sheet metal will work too.</p>
+<ul>
+<li>The backboard is just to hold the various components which connect to eachother electrically with jumper wires.</li>
+<li>Decide if you want the finished product to be mounted in an enclosure:
+<ul>
+<li>if so, cut your acrylic so that it fits inside the enclosure</li>
+<li>if not, you can make a protective enclosure from acrylic</li>
+</ul>
+</li>
+<li>The standoffs are so you can safely secure the different items to the backboard without risk of items shorting or touching the backboard.</li>
+<li>If you use mirror acrylic, the standoffs also allow a glimpse under the boards and gives a good effect.</li>
+</ul>
+<div style="clear:both"></div>
+<h3>Connections</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFA//EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAFNYzxVQkB//8QAGRAAAgMBAAAAAAAAAAAAAAAAAAIBAxES/9oACAEBAAEFApsItGs2dY6Y6c//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oACAECAQE/Aco//8QAGRABAAIDAAAAAAAAAAAAAAAAAAEyEDHh/9oACAEBAAY/AuIxtZZ//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFBYf/aAAgBAQABPyFXjB1h7qNYDrk98ocKtxbqf//aAAwDAQACAAMAAAAQCO//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxBh/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Qlb//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFhcbH/2gAIAQEAAT8QxEzDPDn3KlehAiyzSFASmBqVPca33NbEAd8XX2Ul5FZP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The barrier blocks make the system more resilient to the real world"
+        title="The barrier blocks make the system more resilient to the real world"
+        src="/static/7ad935c3b2bac519d454a17d5047a8c7/1c72d/terminal.jpg"
+        srcset="/static/7ad935c3b2bac519d454a17d5047a8c7/a80bd/terminal.jpg 148w,
+/static/7ad935c3b2bac519d454a17d5047a8c7/1c91a/terminal.jpg 295w,
+/static/7ad935c3b2bac519d454a17d5047a8c7/1c72d/terminal.jpg 590w,
+/static/7ad935c3b2bac519d454a17d5047a8c7/a8a14/terminal.jpg 885w,
+/static/7ad935c3b2bac519d454a17d5047a8c7/fbd2c/terminal.jpg 1180w,
+/static/7ad935c3b2bac519d454a17d5047a8c7/93719/terminal.jpg 4000w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">The barrier blocks make the system more resilient to the real world</figcaption>
+  </figure></p>
+<p>You will need:</p>
+<ul>
+<li><a href="https://thepihut.com/products/barrier-terminal-blocks">Barrier block connector blocks</a></li>
+</ul>
+<p>To interface with the real world can be frustrating when the real world is dirty, and wires get pulled. To solve this problem, I've used barrier blocks so that all wiring inside the main unit is connected carefully, and then when installed, only the other side of the barrier block screws are used. This way if wires get pulled, it won't rip apart the more delicate connections on the boards.</p>
+<p>Adding labels to the barrier blocks will help with installing and maintaining as it's clear what each pin does.</p>
+<p>Important Note! If you aren't buffering the GPIOs, which provides a degree of protection from overvoltage, it's essential you label and are careful when connecting items.</p>
+<div style="clear:both"></div>
+<h3>Raspberry Pi</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 286px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 211.48648648648648%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAqCAYAAACz+XvQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHz0lEQVRIx3WW+VMbVxaF/bdO1dT8MFXZJslkYsexx2NSibGNsQPBZjUGhIlYtYAktAu0ggQS2sAIoQUJiUW7Wt39Tclgs+aVpNfq6nf6nPvuPe/ekWWZT1/pfL4ycnkKYxOklLPsTys5VCiQkkmuj0/r7nDLkIQ6Uq1EC5Gm24X/xVOWFybRvVOw/qybmt2B1H6uXkdqNj+Dtec77Z9Y7ZRI9ZiV0wPijQqtiJLm6q8kLc/Yef43ShNfUN1TU5mfpdwzxu7T52QtFoRVJ81AAFkULwECZVGgIraoiAJ1WULY8VN1a4lbFkiNvOCou4vCsouD4UkKHa9IDY2Qdbup+9ZohCPIknQBeKvkMJSXW6xP7bD3u5GTDi9H7ytUhm3UegdJPeumtOoEtwfRH7gJeHljZCSEeItTxwlhfYLUqJ7Cz2ZOhkVso9N4nrwgMTGJ02Ih7nRR3N1Fuo3hx8CefSAM9eU6/j9j7L/Sc/TYQcMBP37ZQccX/yCpUmH2uPCueUmm928CnjFrzxKc5vhQ2saTX0cdsuDRjOGY6ETn1rCmTbH7co2oQo3dHWFrM00uW0eS5L8AlETk9BabTR/Glp35ihmbfZBVWyd2yYhteJftxxtsjWuwOOP4PAkOsiJnWSPflPwppQ9yeTxuN4YVB9GZWRR3f+TLH//N3gyEH3oJjapZNARYcycpHPCR4ac9uMGQZpVUPk0oHsS/F2N/Wcd05z0e9f2CT5fE9XSe7Wk9rnACbyDOfq5yJUOuAgo1SG+wRZzZjIrB6J+YzK9ZNXZiLGt5m3mByfoUneYpb0LjzBzMs8YmJ4cBjlI2GtXsJ8CzGLQ3q1mGLSGOpWJHX3Ox5nzPkuonxg5eMxEYQat8Qtg0hauyiafoI1KJ02wc06zmkcTmBcM2oFCT2XPAei2K+kjLaGIOq20Anfo+S8U5vvzpa178/Sv2p1XoDVZ8dg/ZRAb5uuTLoO0RleMYDk3MZY24LO/Qqx8wnh1AsTGCbvYZAdU7tFtmHIlVYpVthEaLVqMdNvlCsny+7W0bCRBl9niJsZwWk32AZe1DpvYGGcx0sbj8P6zmXiYLGhaOF1knQGEfshtnYbuaNuc2VE6YKIfH2Asp2H77mPTUI2LhEd5vdzNv+C+r2n4mYvMsZvRsSFuIxQ+A8FHfjVpuj1ZUQ8vdQ8bRT6r/HscTXaQDi+hTwxhN3TjN/WhLNowlK35pAyHhRRaaZ4CXzfGsnmV2jhssrUWYtHtYUS5ge7yETV3kfscrBu5+y+70HIYVGx6Pm1QqhXRJ5Z0blg9sHzWwhlPMeSM4ZxewdljRvocexQCTXQ9ILKiwB7z4g+vsZZOcl/JFpdTrdex2O16vl1AwSPxYwBrPMWx0YRibYuVXG6q5PIqdcczuDvSaZwzEFCizM3gJICR90KhcpE3bfiqVCuVyhUa9/lGyPZpiaWsP/6Ie8yMLyqEq7wwmFgYH2TAqMRQ3cBRDbNb2EKonIImIkvQXkksi2vVthped2JUa3M8dmBZrKPsqeF76sQzMMKyxYQkdEC1KeLxreD0efG7P7bu8ny/iDUZYiX4gotWi6xii7w8jqvEqiw/c+OfUaIMfcCXyRApVTmpVjmoVCrXK7XmYSWfwub2YVp3EZxeYfPAd3z/6Dwb1MYbfTFjfLjBu82GJFQgeCsTrJaL1U/zV4gVD6fNBD/VGnFLZxVbCRFTdR87ZSbYxQzD5hvjyM3aW/mA9tkyx5KHSjLZ976KWb4thS96iKVlJlcwkLW/Y8XxLUHxOlh6yWx2kTb+TOjTSEu20JD+yfOban9OmIDTYqBQJVY+IV0tE2cZUsTMansWg60W9fA9VZZofeu/y+v6/ic1PozNacK26yKSzSJcP+vZF+4DPN2sUW3XKkkCEOLbmKrqaE493gmnTd4xUX/PU/JzRofskDPP4oiGC8SDJ3P4tlXKuWqxA0gbrjTCGhomhmBKtvhuN8S4j+T8YKb1A5/sFjf43BmPvmSmo8OBHCKWhKV4zh7ZjixLisUBU2sF4ZEFbtON1TTBj+Z6B6iveRHtRqh6xYR7HkvXgzLiJlbcRC2UQ5euAIDcE2MqxSZiFYy2KnBazq58F/Q8slJR89eRbur7+ij3VPHabG79zjUwifVXyFcCmCOkSEWn7s2Ov2N4yY/6OvtMuhtJ9zJsf49UNo42YsSUdRKpxxHwJROkWhs0WcvSQLTnG0pGBmZwB28ogWuPPKA5HeX3Yybz9IRZbD8rcEounBtbZpJU6gtZtgEILefeYkBRFnV9i7MMCJtMbpo3f0FN4wsuDDiat32M19jIen0OVWcQvBRGiWRDEv2AYOyTcimE8tbJ46mBldQSjowNVfY6Xuccobfdw2gfQHFlZPrEQkEI3GV5vRTLZLC7XKos2K8HZKYYe/ot//vYN81UFU+Yf0Oue0x9UMJ/X4JM3EOK52xheHAGFQoFkIkHiIMeBzYRuqptu3TCK03HUa08IeafwE2e9uUFM2kHMnNxkeL2bP28nEDcC2G0vebM5xGtPPzrrSxpez3klANKVxbfb18dr6eyNcmqfZNcvhN/2EJ/sZ7+3EyEcumj/Lim7GcNrJ+DHf/lD9vsGCG1/IHaQp6xeQo7Fzp5rv/Taulub9svSpZNT5HD4830xGkXK56+G51Jv839VnMBCmSeMyAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GPIO pins annotated with what is connected"
+        title="GPIO pins annotated with what is connected"
+        src="/static/9917aa031cdf24caa3d1d4204eef2c22/357e3/pins.png"
+        srcset="/static/9917aa031cdf24caa3d1d4204eef2c22/12f09/pins.png 148w,
+/static/9917aa031cdf24caa3d1d4204eef2c22/357e3/pins.png 286w"
+        sizes="(max-width: 286px) 100vw, 286px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">GPIO pins annotated with what is connected</figcaption>
+  </figure></p>
+<p>You will need:</p>
+<ul>
+<li>A Raspberry Pi (running Raspberry Pi OS, or your favourite OS)</li>
+<li>(Optional) <a href="https://thepihut.com/products/gpio-screw-terminal-hat">A Raspberry Pi Screw Terminal HAT</a></li>
+<li>(Optional) <a href="https://thepihut.com/products/raspikey-plug-and-play-emmc-module-for-raspberry-pi">An EMMC module in place of an SD card</a></li>
+</ul>
+<p>The first thing is getting a EMMC module - this is essentially a SSD in SD card format. It is faster, more reliable and resilient to power outages and file operations.</p>
+<p>The Raspberry Pi is the brains of the system and will control all devices. I've used the GPIO Screw Terminal HAT for connections as I found it gives greater flexibility and ease of use - you can see at a glance what pin each device is connected to. Screw terminals are also more resilient than pin headers, but this is optional.</p>
+<p>You may find there are lots of GPIO pins being required. This can be tricky to keep track of, so I downloaded an image of the Pi GPIO header, then annotated on each pin what I expect to connect to it.</p>
+<p>I also recommend looking and referring to <a href="https://pinout.xyz/">Pinout.xyz</a> to see what each pin does internally. Make note of which pins are used for i2c and keep those free so that they can be used later on if need be.</p>
+<p>I made an attempt to group up devices to nearby pins, in this example the keyboard has rows R1-R4 and columns C1-C3 near the bottom of the GPIO.</p>
+<p>The software will be explained later on.</p>
+<div style="clear:both"></div>
+<h3>Fob reader</h3>
+<p>Important - make sure you get the right type of Wiegand reader!</p>
+<p>There are (at least) two main standards for fob systems:</p>
+<ul>
+<li>125kHz</li>
+<li>13.56mHz</li>
+<li>and others</li>
+</ul>
+<p>For this system, which uses fobs which are compatible with NFC, we are using 13.56mHz fobs and readers.</p>
+<p>Note that Wiegand readers are sold often with two descriptors instead of frequencies:</p>
+<ul>
+<li>ID - 125kHz</li>
+<li>IC - 13.56 mHz</li>
+</ul>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 586px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 86.48648648648648%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADz0lEQVQ4y32Ue1BUZRTA70x/9UeNUzP2EEPITMBgggRBXs4OmLViIIIkELuKDZCaFAyQ2cgEM5UZ+coxoEloEsagUIuJhU0Q5LU8FhZBiceyIJNNsCD74PVr7sXdZHQ6M+fec879vt+933lcYXFxEVFMk0b6mjTM3/fFuO2ZzZ+fn7frwsKCpLZ1NhXEoCjtN1r4UJFC/+Cg5Nvi4maTycT/ie1lElAM3J0ycu23aspLKujvH7SDRLl9e4CMrGOkZxzlm3OFFBeXUFmpolt3k7E740xP31sGF8RD9Y+PUXO1hnp1K93dvcuAHZ3dZOccJ/lAGmkZ2SgT38cvcCu+m0OQh0UTG7+fpJTDfPnVaWZmZhCmzGb6Rw1cq1DR8kcr7R3dEmhubk66n//2O5IPppOWdYxDHxxhZ7SCiKh44hTJRO/ZT0SUgkCZHA9PP4aG9Qgmi4Vb+iGul/6KrlFHe4du2RempX9EWHgMfgGhbPKTodybjLqmgfz8YnJyTyCP2IPXpmACgrYyOjqGMGuxoOm7Se3FCoZ6RtBotPZEi4WJT3iXbfJI6YieG4P5NOdrVKoGGurbUKsbcXX3wcnZBVloGH/d/Rvh3tQUBsModbV1DPaO01CnYf5+hScmJsk4kkOwTI6XdzA+fiFkffwF5T/XcDj1E17dGMQqx5dxdHJhR0QMRuMUgtlsZtpoZHDMwOQ/M6irGrFYLRJQ19PL7th9+PjJJJjrK74kv5dJUlIqRRcuEbErAeGxx1n5rCPKxGSs1lkEMfnT01NYzSYWFxdovNHGxIRRAl65WomndyCe3gH4+r/OWxFxvKM8hCAIrFvvwYWiclY7u/GCkwsZmUeX2ka8WMxme1Xb23QYDOOSfebsedy9/HFz90G+I56iokuUlf/O58fPkJ39Gfn5F1nv9hprXnSV1i714QOjJop+eAxtV59k5506J1VRBIZHKvnlcjU/lVVSparnz/5RTp8uZMVTz7HBw5sqVc1/wAfn1mQy09DQLtkHUzPx9AlmW1gUW0LDiFekkHcyn5LSy6jVzSiUB3hyxTP4B4UwrB95GGiDdnXdQq+/Q/EPP/Lm9kiiY/ayPTwWB2dXnnjagbCdsRQUlOLutZnnV68lLiHR3rePBFosVpqbtVitS3nt6tZRUPg9u3bHskX2Brm5J4mO2Yfjug2sXOXEibxT9ul6CGiDGo3TNDV1MDAwgsU8i9Uyh6ZVS0lJBWVlV3g7VomD40usWetKR6fWPl2PBNqg4rBrtT3U1jVRXX2d1tZOqXmXNs/R3tFJS0vrst/Yvy0nJjoCV6ztAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Wiegand readers are potted so are weather resistant"
+        title="Wiegand readers are potted so are weather resistant"
+        src="/static/e579345d1edbf910be2f1ca06146822b/a76f4/wiegand.png"
+        srcset="/static/e579345d1edbf910be2f1ca06146822b/12f09/wiegand.png 148w,
+/static/e579345d1edbf910be2f1ca06146822b/e4a3f/wiegand.png 295w,
+/static/e579345d1edbf910be2f1ca06146822b/a76f4/wiegand.png 586w"
+        sizes="(max-width: 586px) 100vw, 586px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Wiegand readers are potted so are weather resistant</figcaption>
+  </figure></p>
+<p>Make sure you get the right one and always follow the listing details - the output of the readers is the same, but a 125kHz reader won't read a 13.56mHz fob (and likewise the other way round).</p>
+<p>Fob readers and Wiegand devices can be easily bought on sites such as eBay. Most if not all evices require 12v input, which we will deal with further down.</p>
+<p>As they're potted, they are weather resistant and can be used outside. Most have a beeper which can be GPIO controlled. This doubles up as the beeper for the keypad as the two devices will be mounted on a wall near eachother. Some also have a Green LED which can be GPIO controlled.</p>
+<p>Important note! Wiegand readers operate on these voltages:</p>
+<ul>
+<li>Power: 12v</li>
+<li>D0, D1, Beep, LED: 5V</li>
+</ul>
+<p>The GPIO voltage for the Pi is 3.3v, so we need a level shifter (module easily bought from eBay) or resistive divider. Because of postal issues in the UK at the moment, I made a resistive divider.</p>
+<p>This connects a 5k resistor from the Wiegand reader to the GPIO pin, then a 10k resistor from the GPIO pin to ground. This means of the 5v the Wiegand reader outputs, some gets sink to ground via the resistors with only 3.3v going to the GPIO.</p>
+<h3>Keypad</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 363px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 114.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEX0lEQVQ4y1VVaVNTSRR9//+rlgohe96+72veklUgCRgiJIBIOVXqzPgfztS9QR0/nOqbvO7T564tAMCXL39hPl+ibpo/UNU1qqZG3dRHu64xrkqMyzGK8RHjqkKaZ9gf9kQF4cePH0izAu1eD0EYYjKZoSwrjOlAUSLPC2RZhjzPjzavOX9vJhNohgZFV3HWaePTp0cIz89fmNANPJxfnKOua8ZPUjpcFAXGRcFrMS5Y2XFPiSgOsV6v0O52WL3w9PSMpp6haaaYTmeoqhphFCOMIkRxhCRJWDkhTVOEcYQoiZGkKdIsQxAEWK9W6PSIcAzh6dNn1PUETdNgsVigmTQIogimZcL1XCZ0PQ+6YcB1XWR5hsFgiKE4Qp5nsCwLm/UG3X4XRZlDeHx8RFVV7MJyucRkOuXbF4slHMdGFB1VUhxlRUZR5PB9H5KiwPc9uK6N1WqNXr+LbJxCeHh4+EVICqfTKVrtNl69fg1ZlhGGId6+e4e3796yYlL66s1rtNotZFnKl67Xa/SHfaRFAuH+/p6DS6REOJlM2EXDMlkZJUVWFIiSxHYcx5AUGZZt8xkmXK0xFIdIsgjC4XDgD2VVYUmEVH9VyUjSGEkSo8xTJFEAwzQwaWroigTD0BCGATzfZcKRPEKUBL8Jq7rCcr5AQwd0HZ7nwjRp9RBHAXzPg6IqiMIAo9GAY0Z7CKvVCpIiIox9CPv9nuPHLs/n7LIoiThtncD1HK69VquFk9MTdpnKpN1pQ1Fl1PXR5cvLS/4dhi6E29vb3y7PF2xTDG3b4sNxEsMwTY4jJaisShi6xmqLPIfnObi4uISuq/B950hISaGumM9mvF5fXeP56Qlh6CMIfVxvNphPp9B0lbtit90izVJ4roMw9FihZRpwPQvCbrc7tlhRYDGbs93v9TAY9CHLIsew02nj9PTkl+p+v4tOt40w8PnS1cUlHMuE7Rj/I8xzVkjxJBclReISybOcC5pA++Ik4Xi5rsPd5QcuE3q2DcvWIdzc3KAsXwjnc44h1ZgoilzIQeCza6TWdhykSYx+9wztdgtxHCGOQly+P0fgOjBMFcJ2u+WbqbWIkGZdmiRcb1Q2jmtjt/2AzWrFyrIkhqlKHDPT0JAmEd4vlwh8D7ouQ7i+vj6Op/EYsxeX+4M+Ot0OTNPgXhZHQ4yGg2Mhey7OWicYDHosIooDnJ+fI4wCqJoEYbPZoCjGPElCLtoh+v0eer0ur5Qcsgn0jSCKI0iSCFmR2Auei1EIWRlBuLq64hHU6Z5xG1FWdV2DYejQNJVtUvoTlGlKCO2j+Uj7VI1624IkDSFQ2+iGjixPOSE0NNM04800HCirPExffpOdvTwB9O5Q4c/mM1ZqWRqEb1+/wnVMiMMedFWCqSswDZVXy1AZNkODpatH/Pzf1ODaBjRFhKVJ+Pz0CIFeqn///o673Qfc3nzA/uMWh483ONzuGA/7W9y/4GF/9ycOd8dvdx/xz/dv/Or9B0F5rlQMNHXPAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Vandal resistant keypad that I am using"
+        title="Vandal resistant keypad that I am using"
+        src="/static/b577d3625256dea22ece48f61b75b80d/4e786/keypad.png"
+        srcset="/static/b577d3625256dea22ece48f61b75b80d/12f09/keypad.png 148w,
+/static/b577d3625256dea22ece48f61b75b80d/e4a3f/keypad.png 295w,
+/static/b577d3625256dea22ece48f61b75b80d/4e786/keypad.png 363w"
+        sizes="(max-width: 363px) 100vw, 363px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Vandal resistant keypad that I am using</figcaption>
+  </figure></p>
+<p>It's possible to get combined keypad and fob reader Wiegand devices, but in our case we have these split out.</p>
+<p>The keypad we use is 4x3 in standard telephone layout with 1-3 at the top row through to "*", 0 and "#" on the bottom rows.</p>
+<p>Note: The keypad I bought had the numbers in reverse order. To put them in correct order, I disassembled the keypad and switched keys around. The only caveat is that the arrows in the new configuration point inwards rather than outwards but this isn't an issue if you're not using arrows.</p>
+<p>The keypad I have also has the word "enter" and "clear" engraved onto the "#" and "*" keys respectively.</p>
+<h3>LCD display</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 379px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpElEQVQoz6XR/S8UABzHcb/VD9mkUZqS7awOp8SFizw7T4c77jy04e4SR566KDVFwnl+mIfpgdzskocplR601qq1mKitVm21fmj0Sz+0SeHi3WL9BX1//7y2z+drAbDKKv9z/9ILv35hsbK6AssrPP08Q8OEkcpHFzn3oJ3TY60UjdRz/EYtWUMGMvuryRkwoDNVkdl7nqM9ZWiM5WivlPL4+X2Wlxb5ubiExV/5/cIsrZMDFNRpkFenIK6WISjyYXOuCLtcdxT5vnhnCLHWOGGb6cSWgt1YKe3wShTgqrQl+EwYn7/O8tu8sg7enJ+i6nE3Q2M9ND8ZRN9TQ1hJPP56BbIaHS3GZqqMNYiKQ9mV7YlzoS92yp1kFMdypCyBXfk+TH98u9Z9Dby1+BLDaDtt7Q209V6iqv4CSoUvqigJWSV5HGs1cLKjicRTagIjDyKKdmV7shMZlTno6goIy/Hh1dvptR0t5s0/uPbtHjV95eSr5ehSpcgCHNnvYk2SIoJ0hRRFkBfpCfHEh0jwd7dlj6sNTql7kedGEX7UG3fVNiZmXqyD73jI66VRtOlBZByWEqlKwztSTZDYh/iQ3SSFOqAV7SDJ0ZIQkT0BYmc8pC5YxlqiPZOMvjKbrXIrxicfrYPf+1uYM7UQFyhEneiHTNeINH8Yf88ANHH70MQ40Ojnxo2EcFIPCPEW2eAq2YFLngRtXjBFhWFslG2g87ZxHRzt6+fZ3TuU6JNRq4KJiIrAL1iGv4eAUC97oiQOKMWOyAS2xAS4YSW3RJAm5FBxOMIUZzZHb0KcZMX4uAnz36d8mZsFzExOjTB81YCp6yx9naUM9tbR21mBsauW6z1tDHV30H21jfJbnZwerCfvcik5TSfQVGRR0ajn04c3LJp/8wd9/gR1MRufngAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="LCD display featuring the i2c backpack"
+        title="LCD display featuring the i2c backpack"
+        src="/static/b1241295544d7b065e25af0d17ace468/811d1/lcd.png"
+        srcset="/static/b1241295544d7b065e25af0d17ace468/12f09/lcd.png 148w,
+/static/b1241295544d7b065e25af0d17ace468/e4a3f/lcd.png 295w,
+/static/b1241295544d7b065e25af0d17ace468/811d1/lcd.png 379w"
+        sizes="(max-width: 379px) 100vw, 379px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">LCD display featuring the i2c backpack</figcaption>
+  </figure></p>
+<p>Entirely optional, but I have a soft spot for LCD displays.</p>
+<p>I used one which has a i2c backpack on it, so we only need two data pins to communicate with ir rather than the many wires you otherwise need. These are generic devices and can be bought on eBay.</p>
+<p>There's a range of commands that can be used to turn the display on and off, display custom characters, and position text as you please.</p>
+<h3>Relay board</h3>
+<p>Another generic module - these are easily found on eBay and come in many varieties. Make sure to get one which has mounting holes so it can be screwed to the backboard.</p>
+<h3>12v to 5v DC-DC converter</h3>
+<p>Both Wiegand devices and locks usually require 12v input to run. Therefore we need a 12v supply. This can be done in two ways:</p>
+<ul>
+<li>Powering the system with 12v and then converting down to 5v for the Pi</li>
+<li>Powering the system with 5v (e.g. off USB) and then converting up to 12v for the reader</li>
+</ul>
+<p>Which one you choose is up to you, but I went with powering the system off 12v as the lock I'm using requires 12v to operate. Locks can sink a lot of current, so a good power supply is essential.</p>
+<h3>Lock</h3>
+<p>The main component to keep your door secure is a lock. This can be of any type but there are two main categories:</p>
+<ul>
+<li>Fail safe - these locks release if there's a power failure and require power to generate locking force.
+<ul>
+<li>These are good for internal doors</li>
+<li>You may need a green "break glass" emergency release wired in series</li>
+<li>Examples are magnetic locks</li>
+</ul>
+</li>
+<li>Fail secure - these locks require power to release. In a power failure, they'll stay locked.
+<ul>
+<li>These are good for external doors.</li>
+<li>You will need some mechanical override so if there's a power cut or the system fails, people can egress</li>
+<li>Examples are gate locks</li>
+</ul>
+</li>
+</ul>
+<p>Consider all relevant regulations and failure scenarios when selecting a lock. The door in question for my project is street-facing, so I'm using a fail secure lock. This lock has a built in mechanical override, as well as a 12v release coil. Therefore it can be released by software for people wishing to enter, and released physically for people inside wishing to egress.</p>
+<h3>Request to exit button</h3>
+<p>This is often a green mushroom button that can be pressed (or often hit) to release the doors. This doesn't interact with the lock wires physically unlike the "break glass" emergency buttons. This is a simple push button which the software monitors and releases the lock when pushed.</p>
+<h3>Wires</h3>
+<p>I just used standard jumper wires for all parts of the internal system. For external parts, I used two core flex for the 12v power and locks, for the keypad and Wiegand reader I used alarm cable but you can also use ethernet cable.</p>
+<h3>Status lights</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABloTcJhDb/8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAxESBCEi/9oACAEBAAEFAqzYsGXuUeWO54/cuxv/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABBB/9oACAECAQE/Aaf/xAAbEAABBQEBAAAAAAAAAAAAAAABAAIQESFBkf/aAAgBAQAGPwLR6gTyGWcop0f/xAAbEAADAQADAQAAAAAAAAAAAAABESEAMUFRof/aAAgBAQABPyEuANehc4PEpdaBlNn7jhUkxSUmFQIc3//aAAwDAQACAAMAAAAQmM//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EJlEsP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQIBAT8Qdq9v/8QAHRABAQABBAMAAAAAAAAAAAAAAREAITFxwUFRgf/aAAgBAQABPxAkPTGxxgCDsCQw1+95FQShynHqET7hRcusAwrfGABoPef/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Status lights show the system at a glance"
+        title="Status lights show the system at a glance"
+        src="/static/323cb767eed6726770dc1a832108701a/1c72d/status.jpg"
+        srcset="/static/323cb767eed6726770dc1a832108701a/a80bd/status.jpg 148w,
+/static/323cb767eed6726770dc1a832108701a/1c91a/status.jpg 295w,
+/static/323cb767eed6726770dc1a832108701a/1c72d/status.jpg 590w,
+/static/323cb767eed6726770dc1a832108701a/a8a14/status.jpg 885w,
+/static/323cb767eed6726770dc1a832108701a/fbd2c/status.jpg 1180w,
+/static/323cb767eed6726770dc1a832108701a/93719/status.jpg 4000w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Status lights show the system at a glance</figcaption>
+  </figure></p>
+<p>I'm a fan of systems being visually intuitive, and so I made three status lights to give an "at a glance" overview of the system:</p>
+<p>The top LED (red) is the Error LED, and this flashes when there's content written to the error log (the script just checks the size of error.log every few minutes and then sets an internal variable that is referenced every few ms - this keeps the file from being constantly read).</p>
+<p>The middle LED (green) is the Run LED and this flashes every second so that it's clear the script is running as it's actively controlling the LED. If this LED isn't flashing, the script isn't running!</p>
+<p>The bottom LED (green) is the power LED and is connected to the 3.3v rail on the Pi, this just proves the Pi has power.</p>
+<p>This is just made of veroboard, three LEDs and three resistors.</p>
+<h2>Mounting the hardware</h2>
+<p>This step is as much art as engineering. You can if you wish measure up your boards and design a backplate tailored to the size requirements as I did, or you can roughly place the items and see what looks good.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC20lEQVQ4y3WRS28TZxSG5ydV7X+oKnUBa4rBxqgR6raqSqVKiFUxRFU3SLRCqlS1le+XxPEECLFJ7LGN756Lx44dYydO0kpVSoJvY/upvgkEsuji0ZnvnPne7z3nSMemyaizy7TbY9brM3vVwxLs9pjudhl2OgzbbUbtDtNuF6v76gLi7lDQ2mE8OEA6yWSZGyp7mU2am5u0Uy/op1P08kkGxZdYusG0UmVcqdLP59lVFLpK1qajKJxWa1hGg0mxxKxhIo10k6OqwoM/7+Nc/pbP7yzx2Xdf4PnjAaahMdZ0+8JpXUWOxwlGIkSiUZtAJMxRqcS8YTKuq1j7A6ShrvNPsYzr17v8npe588syH9+6jMPzDS8yz5kIQd2wBZ8lEsRWYsRXV22isRh/lcq24KRWx9rfRxoZDf4uFbn041d8dM/BJ/eu8+n3Li7/cIvk9gZTzcAyzgQTq3EC4TDhaIRwNIovHOKo+IFDMcM3hTL/qi8Jyo/5KfSY5cAjfgv+zMPgfcrKlt3utK4yqtVoKVn07TSN9Bni+7VwJhyWK1g7baQTMUzDALMJZgsMk7nRYKYbDOs1pmIpdZVJXaWYTJJ68oTtp89Irq8zKBRZCDHdYFKpYnU6SCeazlTTGQoXqkA7R8xvLKJu2OfnsmwvY3VlhXAkQjOdsec70nT7QbvlE1WFhgmtnf9FuLA7aLZYNFsX4rt/LFU72/KpqtHP5ijE1ygnZEprCUqJt6ytUZZlerk8ZipFOZGgIq9TldepyLKNyNU3NnhdqTLb20caFoqEvV6uOBy4b97E6XLhcrttrjudfLm0RCwSwePxcOXq1fOa84aLG243jmvX+Pr2bfaULItmE+m0VmdvO82Wz0c2FCLjD5ALhciFwmx5faT9AQ6yOXSxDJ+ftN+PEgjatS2v184VYjGGYsu9PtKbfh8Oj5gfHLI4PDyPi7e59+cP6xdrc8HggNnxMf8BCM9peNA1Xb4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="My initial design for the backboard including mounting holes"
+        title="My initial design for the backboard including mounting holes"
+        src="/static/ae17b90cb8f049d6c658c701f211f5f7/fcda8/backboard.png"
+        srcset="/static/ae17b90cb8f049d6c658c701f211f5f7/12f09/backboard.png 148w,
+/static/ae17b90cb8f049d6c658c701f211f5f7/e4a3f/backboard.png 295w,
+/static/ae17b90cb8f049d6c658c701f211f5f7/fcda8/backboard.png 590w,
+/static/ae17b90cb8f049d6c658c701f211f5f7/efc66/backboard.png 885w,
+/static/ae17b90cb8f049d6c658c701f211f5f7/4c42d/backboard.png 896w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">My initial design for the backboard including mounting holes</figcaption>
+  </figure></p>
+<p>Be sure to leave plenty of space between items for wires to go.</p>
+<p>Once you have everything vaguely placed, use a pen such as a Sharpie to mark where holes should go. You can measure things out if you want things aligned, or just eyeball each board's placement. Use a 2.5mm or 3mm drill bit depending on what size hole each item has.</p>
+<p>The Raspberry Pi "B" boards all have 2.5mm holes, so a 2.5mm hole on the backboard, and then 2.5mm spacers will mean everything fits together snugly.</p>
+<p>Using your 2.5mm spacer and fixings kit, put a screw through the back of the board and then mount a small spacer, then tighten, then mount the item, then add a nut.</p>
+<h3>Making a front cover</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABrI4ppgLBP//EABsQAAICAwEAAAAAAAAAAAAAAAABAiIDERIx/9oACAEBAAEFAvUkcMyxpY3I/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AYj/xAAZEAACAwEAAAAAAAAAAAAAAAAAAQIQMUH/2gAIAQEABj8Clba0xHD/xAAeEAACAgICAwAAAAAAAAAAAAABEQBBITFhcaHR8f/aAAgBAQABPyFkvWoxi4n7G4kq6z7hAB2q5weU/9oADAMBAAIAAwAAABAjz//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/EIP/xAAVEQEBAAAAAAAAAAAAAAAAAAAQIf/aAAgBAgEBPxCh/8QAHBABAAIDAAMAAAAAAAAAAAAAAQARITFRscHw/9oACAEBAAE/EC3bjtxGpWoShiaiBN6DAdLwHpG+JqW3exL7eZ//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="the front cover protects the wires and boards from front impact"
+        title="the front cover protects the wires and boards from front impact"
+        src="/static/eddbce11234f0572c07646449b36f7e7/1c72d/cover.jpg"
+        srcset="/static/eddbce11234f0572c07646449b36f7e7/a80bd/cover.jpg 148w,
+/static/eddbce11234f0572c07646449b36f7e7/1c91a/cover.jpg 295w,
+/static/eddbce11234f0572c07646449b36f7e7/1c72d/cover.jpg 590w,
+/static/eddbce11234f0572c07646449b36f7e7/a8a14/cover.jpg 885w,
+/static/eddbce11234f0572c07646449b36f7e7/fbd2c/cover.jpg 1180w,
+/static/eddbce11234f0572c07646449b36f7e7/93719/cover.jpg 4000w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">the front cover protects the wires and boards from front impact</figcaption>
+  </figure></p>
+<p>If your backboard won't be going in an enclosure, it's a good idea to mount a front cover to provide impact protection to the items. This also helps keep curious fingers away from wires.</p>
+<p>To do this:</p>
+<ul>
+<li>Cut a piece of clear or translucent acrylic to the same dimensions as the backboard</li>
+<li>Make four holes in each corner of the backboard and front cover</li>
+<li>Put a screw through the backplate, then, using tall spacers from your 3mm standoff kit (you can also use a 2.5mm standoff kit but 3mm is a bit more rugged), make up enough height from the backboard so that the front cover won't crush any wires or items</li>
+<li>For the last standoff, use a female-female spacer so that you can then screw on the front cover with a screw to give a nice finish from the front.</li>
+</ul>
+<p>When your project is done, you can simply screw on the front cover.</p>
+<p>If you want, cut some sides from acrylic and use acrylic weld to glue to the front cover. This way, with the cover off, all sides of the system are accessible for maintenance, but when the cover is on, all sides are protected.</p>
+<h2>Setting up the Pi</h2>
+<h3>Language and frameworks</h3>
+<p>The most logical option for this project was using Javascript, and Node.js:</p>
+<ul>
+<li>JS has a low barrier to entry so makes maintaining easier</li>
+<li>Asynchronous functions are easy - we can use <code class="language-text">setTimeout</code> and have an event-driven script</li>
+<li>There's plenty of packages and libraries for everything from Wiegand to making HTTP requests with Axios.</li>
+</ul>
+<h3>Getting the Pi set up</h3>
+<p>In general steps:</p>
+<ul>
+<li>Set up your pi with Raspberry Pi OS</li>
+<li>Get your Pi connected to WiFi/Ethernet</li>
+<li>SSH into your Pi</li>
+<li>Install Node.js (which also installs npm for installing packages)</li>
+</ul>
+<h3>Cloning the repo</h3>
+<ul>
+<li>Run <code class="language-text">git clone https://github.com/conorriches/doorbotjs.git</code></li>
+<li>This will create a folder called <code class="language-text">doorbotjs</code> with the code in it, but you can specify a different folder if you'd like to in the <code class="language-text">git clone</code> command.</li>
+<li>Change directory to the new folder: <code class="language-text">cd doorbotjs</code></li>
+<li>Install dependencies with <code class="language-text">npm install</code></li>
+</ul>
+<h3>Processes needed</h3>
+<p>We have two processes:</p>
+<ul>
+<li>Access
+<ul>
+<li>This is the main access control script. It monitors inputs, controls outputs, and makes decisions on who or who may not pass.</li>
+</ul>
+</li>
+<li>UpdateMemberList
+<ul>
+<li>This is run as a cron task, that is, it runs every few minutes</li>
+<li>This updates the CSV of allowed people from our central source</li>
+<li>If you don't have a central CSV of users, you can omit this task by deleting it from ecosystem.config.cjs</li>
+<li>If you want to make a script that does update the local allowed-users file, this is where it should be.</li>
+</ul>
+</li>
+</ul>
+<h3>Keeping your script constantly alive</h3>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEElEQVQY0wXB60rCYACAYQn6pTl31B108zD9HCqaOG1OU0rcbKZ2EiKIrqC/0X10vW/Pk3P7OypOhKGP0bQJijxEN4ZUgntkbYosTVD0KaoaYnUyLLFHUeb4/ReavVfcakpDnKiO3jFqKTlvuKfsrigUx+SvrskXBqjGGBE/o1sxSmmGosdo2gynv8PuZ2jaCq9zwqpnlNUVTXFEzL/wxIHcIj4TLz9o+Rs8d41ejjDMmN+fP3qDM6ViiF2+RSqGuPMl/nqLU0uIwk98L+Py4hqvlnLIvul1j+REkOG3E4LggVY7xXHvUPQbTCfBMLeoaoQqzZClKVZzTXv0SKudMRi8IbpPmOYG297QqCcY2oJ/Whl5UyPZtTgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="PM2 showing the two processes. Yes my terminal background image is the bird from my birdwatching project."
+        title="PM2 showing the two processes. Yes my terminal background image is the bird from my birdwatching project."
+        src="/static/e3b726b5180921af50e1f1ccc014b445/fcda8/pm2.png"
+        srcset="/static/e3b726b5180921af50e1f1ccc014b445/12f09/pm2.png 148w,
+/static/e3b726b5180921af50e1f1ccc014b445/e4a3f/pm2.png 295w,
+/static/e3b726b5180921af50e1f1ccc014b445/fcda8/pm2.png 590w,
+/static/e3b726b5180921af50e1f1ccc014b445/738b8/pm2.png 639w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">PM2 showing the two processes. Yes my terminal background image is the bird from my birdwatching project.</figcaption>
+  </figure>
+Some people may go to great lengths to live forever, fortunately for us, we can keep our script alive by using <code class="language-text">pm2</code>. This should be installed globally using the command:</p>
+<p><code class="language-text">npm install pm2 -g</code></p>
+<p>PM2 is a process manager, and it's job is to run processes, and restart them if they fail. It also provides useful logging and stats on our processes memory requirements with numerous configurations.</p>
+<p>I've created a file <code class="language-text">ecosystem.config.cjs</code> which details the processes we want to run.</p>
+<p>To initialise PM2, simple call:
+<code class="language-text">pm2 start ecosystem.config.cjs</code></p>
+<p>You can then inspect the running processes with the following commands:</p>
+<ul>
+<li><code class="language-text">pm2 logs</code> will show you the various logs, including things logged to console, and error logs</li>
+<li><code class="language-text">pm2 list</code> will show you a list of processes</li>
+<li><code class="language-text">pm2 show &lt;ID></code> will show you detailed stats for a specified process
+<ul>
+<li>ID can be item ID (0,1,etc) or name (access)</li>
+</ul>
+</li>
+<li><code class="language-text">pm2 flush</code> will flush any logs</li>
+<li><code class="language-text">pm2 restart &lt;ID></code> will manually restart a process if you want to make any changes locally (ideal for debugging but make sure to commit any changes!)</li>
+</ul>
+<h2>The code</h2>
+<p>The code for this project <a href="https://github.com/conorriches/doorbotjs">lives on GitHub</a>.</p>
+<p>The general gist of the code is the top level directory contains the main services, and then under <code class="language-text">src</code> are the classes that represent real life things:</p>
+<ul>
+<li>Keypad</li>
+<li>Wiegand</li>
+<li>LCD</li>
+<li>Timed relay</li>
+</ul>
+<p>I've used callbacks as a way to keep the meaty functions in the main file, while exporting all the implementation detail to external files:
+For example, the Wiegand file is just:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token string">"use strict"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> WiegandReader <span class="token keyword">from</span> <span class="token string">"wiegand-node"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Wiegand</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> pinD0<span class="token punctuation">,</span> pinD1<span class="token punctuation">,</span> validateCallback <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fobReader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WiegandReader</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">d0</span><span class="token operator">:</span> pinD0<span class="token punctuation">,</span> <span class="token literal-property property">d1</span><span class="token operator">:</span> pinD1 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fobReader<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fobReader<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"reader"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">idDec<span class="token punctuation">,</span> idRFID<span class="token punctuation">,</span> idHex</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token function">validateCallback</span><span class="token punctuation">(</span>idHex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>This just passes the pins the Wiegand reader is connected to into the library we are using, and passes a callback to the "reader" event, returning the fob ID as hex.</p>
+<h3>Validating Entries</h3>
+<p>Things get more interesting in <code class="language-text">access.js</code> when we validate:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token operator">...</span>
+<span class="token function">entryCodeExistsInMemberlist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">entryCode</span><span class="token operator">:</span> entryCode<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">isKeycode</span><span class="token operator">:</span> isKeycode<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">memberRecord</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token function">grantEntry</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>What is inside <code class="language-text">entryCodeExistsInMemberlist</code>? Here we validate all inputs - both keypad codes and fob codes:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">entryCodeExistsInMemberlist</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> entryCode<span class="token punctuation">,</span> isKeycode <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">"members.csv"</span><span class="token punctuation">,</span> <span class="token string">"utf8"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">reject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token function">parse</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> records</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">reject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        records<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">record</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> <span class="token punctuation">[</span>memberCodeId<span class="token punctuation">,</span> announceName<span class="token punctuation">]</span> <span class="token operator">=</span> record<span class="token punctuation">;</span>
+
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>isKeycode <span class="token operator">&amp;&amp;</span> memberCodeId<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">"ff"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>memberCodeId<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">===</span> entryCode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                memberCodeId<span class="token punctuation">,</span>
+                announceName
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isKeycode <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>memberCodeId<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">"ff"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>memberCodeId<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">==</span> entryCode<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                memberCodeId<span class="token punctuation">,</span>
+                announceName
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">"no record found"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>We return a Promise which means the calling function will only proceed once we call either <code class="language-text">reject</code> or <code class="language-text">resolve</code>. If we call <code class="language-text">resolve</code> we pass in an object with the details of the person who entered.</p>
+<p>To work out whether to admit or deny entry:</p>
+<ul>
+<li>We open <code class="language-text">members.csv</code></li>
+<li>Reject our promise if there's an error, this will deny entry</li>
+<li>For each record (which will be in the format of <code class="language-text">fobId, username</code>)
+<ul>
+<li>check whether it's a keypad code or a fob ID</li>
+<li>consider the correct characters of the stored code to what was entered.</li>
+</ul>
+</li>
+</ul>
+<p>The part that may be confusing with the above is how codes are stored. Rather than have a file full of fob IDs and a file full of keypad access codes, it makes sense to combine the file to just one access file that comes from our source of truth.</p>
+<p>To distinguish between keypad codes and fob codes, all keypad codes start with <code class="language-text">ff</code> which no fob ever will, due to the specification on fob IDs.</p>
+<p>E.g.</p>
+<ul>
+<li><code class="language-text">ff12345678</code> will match keypad entry <code class="language-text">12345678</code></li>
+<li><code class="language-text">aabbccdd</code> will match fob <code class="language-text">aabbccdd</code></li>
+</ul>
+<p>Therefore, when we validate some input, we set the <code class="language-text">isKeycode</code> flag accordingly, which then checks if a line starts with <code class="language-text">ff</code> before trying to validate the user input against it.</p>
+<p>Likewise, if scanning a fob, any line starting with <code class="language-text">ff</code> is ignored as it's not a fob code.</p>
+<p><code class="language-text">grantEntry</code> is the bit that fires the lock, and inside is just:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">grantEntry</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  lock<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  strike<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  led_outside<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">duration</span><span class="token operator">:</span> <span class="token number">5000</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> buzzer_outside<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">duration</span><span class="token operator">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> buzzer_outside<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">duration</span><span class="token operator">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> buzzer_outside<span class="token punctuation">.</span><span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">duration</span><span class="token operator">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<ul>
+<li><code class="language-text">lock</code> is an instance of <code class="language-text">TimedOutput</code>, and calling <code class="language-text">trigger()</code> will fire it for the time defined at instantiation, in this case 0.5s.</li>
+<li><code class="language-text">strike</code> is the same, but set to fire for 10s</li>
+<li><code class="language-text">led_outside</code> connects to the Wiegand "LED" input, which makes the green LED illuminate so the user knows they may enter</li>
+<li>the three <code class="language-text">setTimeout</code> lines are a cheap way to get the outside buzzer (connected to the Wiegand "Beep" input) to chirp thrice on success</li>
+</ul>
+<h3>TimedOutput</h3>
+<p>This class aims to simplify the act of having a relay fire for a given amount of time before returning to it's initial state.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token string">"use strict"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Gpio <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"onoff"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">TimedOutput</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> pin<span class="token punctuation">,</span> duration <span class="token operator">=</span> <span class="token number">50</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>timeout <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>output <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Gpio</span><span class="token punctuation">(</span>pin<span class="token punctuation">,</span> <span class="token string">"high"</span><span class="token punctuation">,</span> <span class="token string">"none"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">activeLow</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>duration <span class="token operator">=</span> duration<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>blocked <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">trigger</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> duration <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> blocking <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>blocked<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>blocking<span class="token punctuation">)</span> <span class="token keyword">this</span><span class="token punctuation">.</span>blocked <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>timeout<span class="token punctuation">)</span> <span class="token function">clearTimeout</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>timeout<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>output<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>timeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>output<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>timeout <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>blocked <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> duration <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>duration<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>The main parts</p>
+<ul>
+<li>A blocking call means the output will stay on for the specified time and won't accept future triggers until it's done
+<ul>
+<li>e.g. You get denied entry and the buzzer is beeping loudly. Pressing a keypad key (which calls a short pip to the buzzer) should not cancel this long beep out!</li>
+</ul>
+</li>
+<li>If the output is active and not blocked, extend the output so that multiple calls maintain the output state
+<ul>
+<li>e.g. For the Request To Exit button - pressing regularly will keep the lock open, rather than the numerous timeouts firing as the user presses the button multiple times</li>
+</ul>
+</li>
+<li>Set the output to high, and then immediately after set a timeout for it to be set low</li>
+<li>High and Low here are inverted, as we initialised the <code class="language-text">Gpio</code> with <code class="language-text">{ activeLow: true }</code>
+<ul>
+<li>Relay boards are common in design, and will trigger the relay when you <strong>ground</strong> the input wire</li>
+<li>Therefore, the pin being LOW would trigger the relay</li>
+<li>Therefore, we set <code class="language-text">activeLow</code> to true so our logic can refer to High (1) and Low (0) without worrying about this physical implementation detail.</li>
+</ul>
+</li>
+</ul>
+<h3>Notable comments on security</h3>
+<p>The method of checking the fob ID is similar to the existing system, and hasn't been updated in this rebuild, which focuses on reliability and maintainability. In both systems we just check the fob ID.</p>
+<p>Fob IDs can be spoofed in the same way as keypad codes can be randomly entered. Therefore we have two considerations to make:</p>
+<ul>
+<li>Entering an incorrect keypad code or fob ID should block the system to slow down attackers</li>
+<li>If someone is going to that much effort to spoof a fob to get into a hackerspace, they probably belong on the inside anyway!</li>
+</ul>
+<p>The advent of Flipper 0 changes things somewhat as it's now easier for anyone to just start spoofing fob IDs. That's why the next upgrade to the system will be some additional layer of security such as a signed hash so we can more securely prevent people from spoofing fobs.</p>
+<p>However, with hundreds of members, this isn't quick or easy. If starting from scratch, it could be worth investigating how to increase your security, for example by using <a href="https://www.npmjs.com/package/mifare-classic">mifare-classic</a> to write data to the tag upon registration which is then verified on reading.</p>
+<h3>Repo README docs</h3>
+<p>Notable README files live under <code class="language-text">/docs</code>:</p>
+<ul>
+<li><a href="https://github.com/conorriches/doorbotjs/blob/main/docs/code.md">notes on the code</a></li>
+<li><a href="https://github.com/conorriches/doorbotjs/blob/main/docs/manual.md">user manual</a></li>
+<li><a href="https://github.com/conorriches/doorbotjs/blob/main/docs/terminology.md">terminology for people not familiar</a></li>
+<li><a href="https://github.com/conorriches/doorbotjs/blob/main/docs/wiring.md">wiring diagram for getting started</a></li>
+</ul></div></div></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/access-control/";window.___webpackCompilationHash="8f445ad4dd14fbbd6ff4";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-445b3e937c4fda20fffe.js"],"app":["/app-802977a7e207cac019da.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-1c603ca58d600a548ad8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-413fc8a791f45a52533b.js"],"component---src-pages-about-js":["/component---src-pages-about-js-1a4feee6b4d9d1c8d831.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-6360b634c635dce18a8c.js"],"component---src-pages-index-js":["/component---src-pages-index-js-33f2bdc5f7bf3471f399.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-70ba905eab62315bdd54.js"]};/*]]>*/</script><script src="/polyfill-445b3e937c4fda20fffe.js" nomodule=""></script><script src="/app-802977a7e207cac019da.js" async=""></script><script src="/framework-a725160f7752bf55f790.js" async=""></script><script src="/webpack-runtime-2fd8ed8a77ee094abf79.js" async=""></script></body></html>
