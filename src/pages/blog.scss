@@ -16,4 +16,30 @@
         padding:0.6em;
         width:100%;
     }
+
+    &__Meta{
+      padding-bottom: 1rem;
+      margin-bottom: 3rem;
+
+      > * {
+        margin-right: 3rem;
+        padding: 0 1rem;
+        border-left: 3px solid red;
+        color: #aaa;
+
+        &:nth-child(2){
+          border-color: #00c9ff
+        }
+
+        &:nth-child(3){
+          border-color: #363795
+        }
+
+      }
+
+    }
+
+
 }
+
+

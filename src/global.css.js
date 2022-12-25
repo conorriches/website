@@ -19,7 +19,7 @@ export default createGlobalStyle`
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Anybody', sans-serif;
     vertical-align: baseline;
   }
 
@@ -34,7 +34,6 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1;
     font-size: 1.6rem;
     color: #000;
@@ -43,9 +42,6 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    -webkit-font-feature-settings: "pnum";
-    font-feature-settings: "pnum";
-    font-variant-numeric: proportional-nums;
     overflow-y: scroll;
   }
 
@@ -67,13 +63,11 @@ export default createGlobalStyle`
 
   h1{
     font-size:2.4em;
-    line-height:1.2em;
     margin: 0.6em 0;
   }
 
   h2{
     font-size:1.8em;
-    line-height:2em;
     margin-bottom: 0.6em;
     margin-top: 1.5em;
     border-left: 0.2em solid #0575e6;
@@ -83,9 +77,8 @@ export default createGlobalStyle`
 
   h3{
     font-size: 1.2em;
-    line-height:1.4em;
     margin: 1.5em 0 0.6em 0;
-    border-left: 0.2em solid #0575e6;
+    border-left: 0.2em solid #00c9ff;
     padding: 0.3em;
     padding-left: 0.5em;
   }
@@ -136,11 +129,11 @@ export default createGlobalStyle`
     border: 1px solid #ddd;
     background: #eee;
     border-left: 3px solid;
-    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-family: monospace;
   }
 
   code {
-    font-family: courier;
+    font-family: monospace;
     display: inline-block;
     padding: 0 0.5em;
   }
@@ -153,7 +146,6 @@ export default createGlobalStyle`
     margin-top:0.6em;
     margin-bottom: 2.4rem;
     line-height:1.4em;
-    font-family: monospace;
   }
 
   strong {

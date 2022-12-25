@@ -4,7 +4,7 @@ title: "Making an access control system with Wiegand readers and the Raspberry P
 excerpt: "Make a versatile entry system that can operate with hundreds of users using professional Wiegand devices."
 featuredImage: ../images/access-control/connections.jpg
 ---
-This is a fun project which shows how easy it is to make an entry system with industrial components and a Raspberry Pi.
+This is a fun project which shows how easy it is to make an entry system with standardised industrial components and a Raspberry Pi.
 
 The hackerspace has an entry system which has started to show its age - it requires a Pi 1 and occasionally breaks in new and exciting ways. It was therefore time for a new setup, one which was open for people to see how it works, and fix as things inevitably break.
 
@@ -20,7 +20,7 @@ The benefits of this system is that everything is modular, replaceable, easy to 
 * Two relays
   * One for the main lock
   * One for a future use - currently operating some lights to illuminate the step into the premises
-* Beeper
+* Beeper and LED for outside
 * LED status lights
   * Power on
   * Run (shows the script is functional and not frozen/stopped)
@@ -31,7 +31,8 @@ The system operates based off an entry list. The entry list is a CSV file that c
 The main benefit of this approach is that if the internet connection fails when a user attempts to enter, the system will still function as it has a local cache of permitted users. If the entry list hasn't been updated in a while, because of some error fetching an updated version, we can raise an error.
 
 ## Hardware
-The system has key parts that all bolt together and talk to one another. I'll address each aspect in turn.
+The system is entirely modular with all the different aspects connecting together and bolted to a backboard.
+This method of mounting components is super maker-friendly, versatile and has a nice finish.
 
 ### Mounting plate / backboard
 ![Connections are made to the Pi via this GPIO screw terminal hat](./../images/access-control/connections.jpg)
@@ -45,7 +46,7 @@ The whole system is mounted a backboard. Acrylic is ideal as it can be cut by ha
 * The backboard is just to hold the various components which connect to eachother electrically with jumper wires. 
 * Decide if you want the finished product to be mounted in an enclosure:
   *  if so, cut your acrylic so that it fits inside the enclosure
-  *  if not, you can make a protective enclosure from acrylic 
+  *  if not, you can make a protective enclosure from acrylic - clear acrylic looks very smart!
 * The standoffs are so you can safely secure the different items to the backboard without risk of items shorting or touching the backboard.
 * If you use mirror acrylic, the standoffs also allow a glimpse under the boards and gives a good effect.
 
@@ -58,15 +59,11 @@ The whole system is mounted a backboard. Acrylic is ideal as it can be cut by ha
 You will need:
 * [Barrier block connector blocks](https://thepihut.com/products/barrier-terminal-blocks)
 
-To interface with the real world can be frustrating when the real world is dirty, and wires get pulled. To solve this problem, I've used barrier blocks so that all wiring inside the main unit is connected carefully, and then when installed, only the other side of the barrier block screws are used. This way if wires get pulled, it won't rip apart the more delicate connections on the boards.
+To interface with the real world can be frustrating when the real world is dirty, and things can move about which can damage delicate wires. To solve this problem, I've used barrier blocks so that all wiring inside the main unit is connected carefully, and then when installed, only the other side of the barrier block screws are used. This way if wires get moved, it won't rip apart the more delicate connections on the boards.
 
+I've also added labels to the barrier blocks which help with installing and maintaining, as it's clear what each pin does.
 
-Adding labels to the barrier blocks will help with installing and maintaining as it's clear what each pin does.
-
-Important Note! If you aren't buffering the GPIOs, which provides a degree of protection from overvoltage, it's essential you label and are careful when connecting items. 
-
-
-<div style="clear:both"></div>
+Important Note! If you aren't buffering the GPIOs, which provides a degree of protection from over voltage, it's essential you label and are careful when connecting items. 
 
 ### Raspberry Pi
 ![GPIO pins annotated with what is connected](./../images/access-control/pins.png)
@@ -86,40 +83,32 @@ You may find there are lots of GPIO pins being required. This can be tricky to k
 
 I also recommend looking and referring to [Pinout.xyz](https://pinout.xyz/) to see what each pin does internally. Make note of which pins are used for i2c and keep those free so that they can be used later on if need be.
 
-I made an attempt to group up devices to nearby pins, in this example the keyboard has rows R1-R4 and columns C1-C3 near the bottom of the GPIO.
-
-The software will be explained later on. 
-
-
-<div style="clear:both"></div>
+It's good practice to group up devices to nearby pins, in this example the keyboard has rows R1-R4 and columns C1-C3 near the bottom of the GPIO. This means that groups of wires go to roughly the same places, and the GPIO header is overall more intuitive to debug.
 
 
 ### Fob reader
-Important - make sure you get the right type of Wiegand reader!
+
+![Wiegand readers are potted so are weather resistant](./../images/access-control/wiegand.png)
+
+Important - make sure you get the right type of fob reader!
 
 There are (at least) two main standards for fob systems:
 * 125kHz
 * 13.56mHz
 * and others
 
-
-For this system, which uses fobs which are compatible with NFC, we are using 13.56mHz fobs and readers.
+While the output of the readers is the same Wiegand protocol, a 125kHz reader won't read a 13.56mHz fob (and likewise the other way round). What type you choose is up to you - 13.56mHz seems to be the more modern option but either will work. If you have fobs already, make sure you get a compatible reader. For this system, which uses fobs which are compatible with NFC, we are using 13.56mHz fobs and readers.
 
 Note that Wiegand readers are sold often with two descriptors instead of frequencies:
 * ID - 125kHz
 * IC - 13.56 mHz
 
-![Wiegand readers are potted so are weather resistant](./../images/access-control/wiegand.png)
+Fob readers and Wiegand devices can be easily bought on sites such as eBay. Most if not all devices require 12v input, which we will deal with further down.
 
-Make sure you get the right one and always follow the listing details - the output of the readers is the same, but a 125kHz reader won't read a 13.56mHz fob (and likewise the other way round).
+As the internal circuits are potted, they are weather resistant and can be used outside. Most have a beeper which can be GPIO controlled. This doubles up as the beeper for the keypad as the keypad itself doesn't have any beeper of it's own, and audio feedback when pressing buttons is important. As the two devices will be mounted on a wall near eachother, using the RFID reader beeper for the keypad is acceptable. Some fob readers also have a Green LED which can be GPIO controlled too.
 
-Fob readers and Wiegand devices can be easily bought on sites such as eBay. Most if not all evices require 12v input, which we will deal with further down.
-
-As they're potted, they are weather resistant and can be used outside. Most have a beeper which can be GPIO controlled. This doubles up as the beeper for the keypad as the two devices will be mounted on a wall near eachother. Some also have a Green LED which can be GPIO controlled.
-
-Important note! Wiegand readers operate on these voltages:
-* Power: 12v
-* D0, D1, Beep, LED: 5V
+#### Logic Level Voltage Warning
+Important note! Wiegand readers have two data lines, D0 and D1. They may also have Beep and LED lines which all run at 5V.
 
 The GPIO voltage for the Pi is 3.3v, so we need a level shifter (module easily bought from eBay) or resistive divider. Because of postal issues in the UK at the moment, I made a resistive divider.
 
@@ -142,7 +131,7 @@ The keypad I have also has the word "enter" and "clear" engraved onto the "#" an
 
 Entirely optional, but I have a soft spot for LCD displays. 
 
-I used one which has a i2c backpack on it, so we only need two data pins to communicate with ir rather than the many wires you otherwise need. These are generic devices and can be bought on eBay.
+I used one which has a i2c backpack on it, so we only need two data pins to communicate with it rather than the many wires you otherwise need. These are generic devices and can be bought on eBay.
 
 There's a range of commands that can be used to turn the display on and off, display custom characters, and position text as you please.
 
@@ -150,12 +139,12 @@ There's a range of commands that can be used to turn the display on and off, dis
 ### Relay board
 Another generic module - these are easily found on eBay and come in many varieties. Make sure to get one which has mounting holes so it can be screwed to the backboard. 
 
-### 12v to 5v DC-DC converter
-Both Wiegand devices and locks usually require 12v input to run. Therefore we need a 12v supply. This can be done in two ways:
-* Powering the system with 12v and then converting down to 5v for the Pi
-* Powering the system with 5v (e.g. off USB) and then converting up to 12v for the reader
+### Powering your system
+Both Wiegand devices and locks usually require 12v input to run, and some locks may require 24v. Generally you'll start off with a power supply converting mains AC to the higher voltage DC, then reduce down the voltage as needed for different devices.
 
-Which one you choose is up to you, but I went with powering the system off 12v as the lock I'm using requires 12v to operate. Locks can sink a lot of current, so a good power supply is essential.
+You may be able to get a power supply that has multiple voltage outputs. In this case, I'm powering the system with 12v and then converting down to 5v for the Pi. We have a 12v UPS so the system is resilient during a power outage.
+
+Not that locks can sink a lot of current, so a good power supply is essential.
 
 ### Lock
 The main component to keep your door secure is a lock. This can be of any type but there are two main categories:
@@ -303,22 +292,7 @@ export default class Wiegand {
 This just passes the pins the Wiegand reader is connected to into the library we are using, and passes a callback to the "reader" event, returning the fob ID as hex.  
 
 ### Validating Entries
-Things get more interesting in `access.js` when we validate:
-
-```javascript
-...
-entryCodeExistsInMemberlist({
-    entryCode: entryCode.toLowerCase(),
-    isKeycode: isKeycode,
-}).then((memberRecord) => {
-  ...
-  grantEntry();
-  ...
-});
-
-```
-
-What is inside `entryCodeExistsInMemberlist`? Here we validate all inputs - both keypad codes and fob codes:
+Things get more interesting in `access.js` when we validate an entry. To keep things consistent, the same function validates both keypad codes and fob codes, with a boolean flag to differentiate between the two.
 
 ```javascript
 const entryCodeExistsInMemberlist = ({ entryCode, isKeycode = false }) => {
@@ -363,7 +337,7 @@ const entryCodeExistsInMemberlist = ({ entryCode, isKeycode = false }) => {
 
 ```
 
-We return a Promise which means the calling function will only proceed once we call either `reject` or `resolve`. If we call `resolve` we pass in an object with the details of the person who entered.
+We return a Promise which means the calling function won't block, and the resulting behaviour will depend on whether we call either `reject` or `resolve`. If we call `resolve` we pass in an object with the details of the person who entered.
 
 To work out whether to admit or deny entry:
 * We open `members.csv`

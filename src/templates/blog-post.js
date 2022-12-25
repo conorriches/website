@@ -1,17 +1,18 @@
 import React from 'react';
 import { graphql, Link} from 'gatsby';
 import Layout from '../components/layout';
+import './blogpost.scss'
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout colour="millennial">
-      <div>
-        <Link to="/blog" className="BlogLink BlogLink--back">
-          Back <span className="chevron chevron--left"></span>
-        </Link>
-        <small>{post.frontmatter.date}</small>
+      <div className="BlogPost">
         <h1>{post.frontmatter.title}</h1>
+        <div className='Blog__Meta'>
+          <Link to="/blog">Back</Link>
+          <small>{post.frontmatter.date}</small>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -23,6 +24,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

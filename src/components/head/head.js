@@ -27,6 +27,13 @@ const Head = ({
     />
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+
     <meta content={siteTitle} name="apple-mobile-web-app-title" />
     <meta content={pageTitleFull} property="og:title" />
     <meta content={pageTitleFull} name="twitter:title" />

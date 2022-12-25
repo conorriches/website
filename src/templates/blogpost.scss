@@ -1,0 +1,17 @@
+.BlogPost {
+  p, code, pre, li, figcaption, h2, h3, h4, h5, a {
+    font-family: 'Fragment Mono', sans-serif;
+  }
+
+  h2, h3, h4, h5 {
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+
+  h2 {
+    margin-top: 5rem;
+  }
+  h3 {
+    margin-top: 4rem;
+  }
+}
